@@ -1,2747 +1,4117 @@
+
+
+// --- Verb data (FULL SUPER verb set for Present, Past, and Future) ---
 const VERB_SETS = {
   "Present": [
     {
-      "en": "I is",
-      "es": "je suis"
+      "en": "I am",
+      "es": "suis"
     },
     {
-      "en": "I do not is",
-      "es": "je ne suis pas"
+      "en": "I do not am",
+      "es": "ne suis pas"
     },
     {
-      "en": "You is",
-      "es": "tu es"
+      "en": "Do i am?",
+      "es": "suis?"
     },
     {
-      "en": "You do not is",
-      "es": "tu ne es pas"
+      "en": "You are",
+      "es": "es"
+    },
+    {
+      "en": "You do not am",
+      "es": "n'es pas"
+    },
+    {
+      "en": "Do you am?",
+      "es": "es?"
     },
     {
       "en": "He is",
-      "es": "il est"
+      "es": "est"
     },
     {
-      "en": "He do not is",
-      "es": "il ne est pas"
+      "en": "He do not am",
+      "es": "n'est pas"
     },
     {
-      "en": "She is",
-      "es": "nous sommes"
+      "en": "Do he am?",
+      "es": "est?"
     },
     {
-      "en": "She do not is",
-      "es": "nous ne sommes pas"
+      "en": "She are",
+      "es": "sommes"
     },
     {
-      "en": "We is",
-      "es": "vous êtes"
+      "en": "She do not am",
+      "es": "ne sommes pas"
     },
     {
-      "en": "We do not is",
-      "es": "vous ne êtes pas"
+      "en": "Do she am?",
+      "es": "sommes?"
     },
     {
-      "en": "They is",
-      "es": "ils sont"
+      "en": "We are",
+      "es": "êtes"
     },
     {
-      "en": "They do not is",
-      "es": "ils ne sont pas"
+      "en": "We do not am",
+      "es": "n'êtes pas"
+    },
+    {
+      "en": "Do we am?",
+      "es": "êtes?"
+    },
+    {
+      "en": "They are",
+      "es": "sont"
+    },
+    {
+      "en": "They do not am",
+      "es": "ne sont pas"
+    },
+    {
+      "en": "Do they am?",
+      "es": "sont?"
     },
     {
       "en": "I have",
-      "es": "j'ai"
+      "es": "ai"
     },
     {
       "en": "I do not have",
-      "es": "ne j'ai pas"
+      "es": "n'ai pas"
     },
     {
-      "en": "You have",
-      "es": "tu as"
+      "en": "Do i have?",
+      "es": "ai?"
+    },
+    {
+      "en": "You has",
+      "es": "as"
     },
     {
       "en": "You do not have",
-      "es": "tu ne as pas"
+      "es": "n'as pas"
     },
     {
-      "en": "He have",
-      "es": "il a"
+      "en": "Do you have?",
+      "es": "as?"
+    },
+    {
+      "en": "He has",
+      "es": "a"
     },
     {
       "en": "He do not have",
-      "es": "il ne a pas"
+      "es": "n'a pas"
     },
     {
-      "en": "She have",
-      "es": "nous avons"
+      "en": "Do he have?",
+      "es": "a?"
+    },
+    {
+      "en": "She has",
+      "es": "avons"
     },
     {
       "en": "She do not have",
-      "es": "nous ne avons pas"
+      "es": "n'avons pas"
     },
     {
-      "en": "We have",
-      "es": "vous avez"
+      "en": "Do she have?",
+      "es": "avons?"
+    },
+    {
+      "en": "We has",
+      "es": "avez"
     },
     {
       "en": "We do not have",
-      "es": "vous ne avez pas"
+      "es": "n'avez pas"
     },
     {
-      "en": "They have",
-      "es": "ils ont"
+      "en": "Do we have?",
+      "es": "avez?"
+    },
+    {
+      "en": "They has",
+      "es": "ont"
     },
     {
       "en": "They do not have",
-      "es": "ils ne ont pas"
+      "es": "n'ont pas"
+    },
+    {
+      "en": "Do they have?",
+      "es": "ont?"
     },
     {
       "en": "I go",
-      "es": "je vais"
+      "es": "vais"
     },
     {
       "en": "I do not go",
-      "es": "je ne vais pas"
+      "es": "ne vais pas"
     },
     {
-      "en": "You go",
-      "es": "tu vas"
+      "en": "Do i go?",
+      "es": "vais?"
+    },
+    {
+      "en": "You goes",
+      "es": "vas"
     },
     {
       "en": "You do not go",
-      "es": "tu ne vas pas"
+      "es": "ne vas pas"
     },
     {
-      "en": "He go",
-      "es": "il va"
+      "en": "Do you go?",
+      "es": "vas?"
+    },
+    {
+      "en": "He goes",
+      "es": "va"
     },
     {
       "en": "He do not go",
-      "es": "il ne va pas"
+      "es": "ne va pas"
     },
     {
-      "en": "She go",
-      "es": "nous allons"
+      "en": "Do he go?",
+      "es": "va?"
+    },
+    {
+      "en": "She goes",
+      "es": "allons"
     },
     {
       "en": "She do not go",
-      "es": "nous ne allons pas"
+      "es": "n'allons pas"
     },
     {
-      "en": "We go",
-      "es": "vous allez"
+      "en": "Do she go?",
+      "es": "allons?"
+    },
+    {
+      "en": "We goes",
+      "es": "allez"
     },
     {
       "en": "We do not go",
-      "es": "vous ne allez pas"
+      "es": "n'allez pas"
     },
     {
-      "en": "They go",
-      "es": "ils vont"
+      "en": "Do we go?",
+      "es": "allez?"
+    },
+    {
+      "en": "They goes",
+      "es": "vont"
     },
     {
       "en": "They do not go",
-      "es": "ils ne vont pas"
+      "es": "ne vont pas"
+    },
+    {
+      "en": "Do they go?",
+      "es": "vont?"
     },
     {
       "en": "I do",
-      "es": "je fais"
+      "es": "fais"
     },
     {
       "en": "I do not do",
-      "es": "je ne fais pas"
+      "es": "ne fais pas"
     },
     {
-      "en": "You do",
-      "es": "tu fais"
+      "en": "Do i do?",
+      "es": "fais?"
+    },
+    {
+      "en": "You does",
+      "es": "fais"
     },
     {
       "en": "You do not do",
-      "es": "tu ne fais pas"
+      "es": "ne fais pas"
     },
     {
-      "en": "He do",
-      "es": "il fait"
+      "en": "Do you do?",
+      "es": "fais?"
+    },
+    {
+      "en": "He does",
+      "es": "fait"
     },
     {
       "en": "He do not do",
-      "es": "il ne fait pas"
+      "es": "ne fait pas"
     },
     {
-      "en": "She do",
-      "es": "nous faisons"
+      "en": "Do he do?",
+      "es": "fait?"
+    },
+    {
+      "en": "She does",
+      "es": "faisons"
     },
     {
       "en": "She do not do",
-      "es": "nous ne faisons pas"
+      "es": "ne faisons pas"
     },
     {
-      "en": "We do",
-      "es": "vous faites"
+      "en": "Do she do?",
+      "es": "faisons?"
+    },
+    {
+      "en": "We does",
+      "es": "faites"
     },
     {
       "en": "We do not do",
-      "es": "vous ne faites pas"
+      "es": "ne faites pas"
     },
     {
-      "en": "They do",
-      "es": "ils font"
+      "en": "Do we do?",
+      "es": "faites?"
+    },
+    {
+      "en": "They does",
+      "es": "font"
     },
     {
       "en": "They do not do",
-      "es": "ils ne font pas"
+      "es": "ne font pas"
+    },
+    {
+      "en": "Do they do?",
+      "es": "font?"
     },
     {
       "en": "I speak",
-      "es": "je parle"
+      "es": "parle"
     },
     {
       "en": "I do not speak",
-      "es": "je ne parle pas"
+      "es": "ne parle pas"
     },
     {
-      "en": "You speak",
-      "es": "tu parles"
+      "en": "Do i speak?",
+      "es": "parle?"
+    },
+    {
+      "en": "You speaks",
+      "es": "parles"
     },
     {
       "en": "You do not speak",
-      "es": "tu ne parles pas"
+      "es": "ne parles pas"
     },
     {
-      "en": "He speak",
-      "es": "il parle"
+      "en": "Do you speak?",
+      "es": "parles?"
+    },
+    {
+      "en": "He speaks",
+      "es": "parle"
     },
     {
       "en": "He do not speak",
-      "es": "il ne parle pas"
+      "es": "ne parle pas"
     },
     {
-      "en": "She speak",
-      "es": "nous parlons"
+      "en": "Do he speak?",
+      "es": "parle?"
+    },
+    {
+      "en": "She speaks",
+      "es": "parlons"
     },
     {
       "en": "She do not speak",
-      "es": "nous ne parlons pas"
+      "es": "ne parlons pas"
     },
     {
-      "en": "We speak",
-      "es": "vous parlez"
+      "en": "Do she speak?",
+      "es": "parlons?"
+    },
+    {
+      "en": "We speaks",
+      "es": "parlez"
     },
     {
       "en": "We do not speak",
-      "es": "vous ne parlez pas"
+      "es": "ne parlez pas"
     },
     {
-      "en": "They speak",
-      "es": "ils parlent"
+      "en": "Do we speak?",
+      "es": "parlez?"
+    },
+    {
+      "en": "They speaks",
+      "es": "parlent"
     },
     {
       "en": "They do not speak",
-      "es": "ils ne parlent pas"
+      "es": "ne parlent pas"
+    },
+    {
+      "en": "Do they speak?",
+      "es": "parlent?"
     },
     {
       "en": "I finish",
-      "es": "je finis"
+      "es": "finis"
     },
     {
       "en": "I do not finish",
-      "es": "je ne finis pas"
+      "es": "ne finis pas"
     },
     {
-      "en": "You finish",
-      "es": "tu finis"
+      "en": "Do i finish?",
+      "es": "finis?"
+    },
+    {
+      "en": "You finishes",
+      "es": "finis"
     },
     {
       "en": "You do not finish",
-      "es": "tu ne finis pas"
+      "es": "ne finis pas"
     },
     {
-      "en": "He finish",
-      "es": "il finit"
+      "en": "Do you finish?",
+      "es": "finis?"
+    },
+    {
+      "en": "He finishes",
+      "es": "finit"
     },
     {
       "en": "He do not finish",
-      "es": "il ne finit pas"
+      "es": "ne finit pas"
     },
     {
-      "en": "She finish",
-      "es": "nous finissons"
+      "en": "Do he finish?",
+      "es": "finit?"
+    },
+    {
+      "en": "She finishes",
+      "es": "finissons"
     },
     {
       "en": "She do not finish",
-      "es": "nous ne finissons pas"
+      "es": "ne finissons pas"
     },
     {
-      "en": "We finish",
-      "es": "vous finissez"
+      "en": "Do she finish?",
+      "es": "finissons?"
+    },
+    {
+      "en": "We finishes",
+      "es": "finissez"
     },
     {
       "en": "We do not finish",
-      "es": "vous ne finissez pas"
+      "es": "ne finissez pas"
     },
     {
-      "en": "They finish",
-      "es": "ils finissent"
+      "en": "Do we finish?",
+      "es": "finissez?"
+    },
+    {
+      "en": "They finishes",
+      "es": "finissent"
     },
     {
       "en": "They do not finish",
-      "es": "ils ne finissent pas"
+      "es": "ne finissent pas"
+    },
+    {
+      "en": "Do they finish?",
+      "es": "finissent?"
     },
     {
       "en": "I take",
-      "es": "je prends"
+      "es": "prends"
     },
     {
       "en": "I do not take",
-      "es": "je ne prends pas"
+      "es": "ne prends pas"
     },
     {
-      "en": "You take",
-      "es": "tu prends"
+      "en": "Do i take?",
+      "es": "prends?"
+    },
+    {
+      "en": "You takes",
+      "es": "prends"
     },
     {
       "en": "You do not take",
-      "es": "tu ne prends pas"
+      "es": "ne prends pas"
     },
     {
-      "en": "He take",
-      "es": "il prend"
+      "en": "Do you take?",
+      "es": "prends?"
+    },
+    {
+      "en": "He takes",
+      "es": "prend"
     },
     {
       "en": "He do not take",
-      "es": "il ne prend pas"
+      "es": "ne prend pas"
     },
     {
-      "en": "She take",
-      "es": "nous prenons"
+      "en": "Do he take?",
+      "es": "prend?"
+    },
+    {
+      "en": "She takes",
+      "es": "prenons"
     },
     {
       "en": "She do not take",
-      "es": "nous ne prenons pas"
+      "es": "ne prenons pas"
     },
     {
-      "en": "We take",
-      "es": "vous prenez"
+      "en": "Do she take?",
+      "es": "prenons?"
+    },
+    {
+      "en": "We takes",
+      "es": "prenez"
     },
     {
       "en": "We do not take",
-      "es": "vous ne prenez pas"
+      "es": "ne prenez pas"
     },
     {
-      "en": "They take",
-      "es": "ils prennent"
+      "en": "Do we take?",
+      "es": "prenez?"
+    },
+    {
+      "en": "They takes",
+      "es": "prennent"
     },
     {
       "en": "They do not take",
-      "es": "ils ne prennent pas"
+      "es": "ne prennent pas"
+    },
+    {
+      "en": "Do they take?",
+      "es": "prennent?"
     },
     {
       "en": "I come",
-      "es": "je viens"
+      "es": "viens"
     },
     {
       "en": "I do not come",
-      "es": "je ne viens pas"
+      "es": "ne viens pas"
     },
     {
-      "en": "You come",
-      "es": "tu viens"
+      "en": "Do i come?",
+      "es": "viens?"
+    },
+    {
+      "en": "You comes",
+      "es": "viens"
     },
     {
       "en": "You do not come",
-      "es": "tu ne viens pas"
+      "es": "ne viens pas"
     },
     {
-      "en": "He come",
-      "es": "il vient"
+      "en": "Do you come?",
+      "es": "viens?"
+    },
+    {
+      "en": "He comes",
+      "es": "vient"
     },
     {
       "en": "He do not come",
-      "es": "il ne vient pas"
+      "es": "ne vient pas"
     },
     {
-      "en": "She come",
-      "es": "nous venons"
+      "en": "Do he come?",
+      "es": "vient?"
+    },
+    {
+      "en": "She comes",
+      "es": "venons"
     },
     {
       "en": "She do not come",
-      "es": "nous ne venons pas"
+      "es": "ne venons pas"
     },
     {
-      "en": "We come",
-      "es": "vous venez"
+      "en": "Do she come?",
+      "es": "venons?"
+    },
+    {
+      "en": "We comes",
+      "es": "venez"
     },
     {
       "en": "We do not come",
-      "es": "vous ne venez pas"
+      "es": "ne venez pas"
     },
     {
-      "en": "They come",
-      "es": "ils viennent"
+      "en": "Do we come?",
+      "es": "venez?"
+    },
+    {
+      "en": "They comes",
+      "es": "viennent"
     },
     {
       "en": "They do not come",
-      "es": "ils ne viennent pas"
+      "es": "ne viennent pas"
+    },
+    {
+      "en": "Do they come?",
+      "es": "viennent?"
     },
     {
       "en": "I can",
-      "es": "je peux"
+      "es": "peux"
     },
     {
-      "en": "I do not can",
-      "es": "je ne peux pas"
+      "en": "I cannot",
+      "es": "ne peux pas"
+    },
+    {
+      "en": "Can i?",
+      "es": "peux?"
     },
     {
       "en": "You can",
-      "es": "tu peux"
+      "es": "peux"
     },
     {
-      "en": "You do not can",
-      "es": "tu ne peux pas"
+      "en": "You cannot",
+      "es": "ne peux pas"
+    },
+    {
+      "en": "Can you?",
+      "es": "peux?"
     },
     {
       "en": "He can",
-      "es": "il peut"
+      "es": "peut"
     },
     {
-      "en": "He do not can",
-      "es": "il ne peut pas"
+      "en": "He cannot",
+      "es": "ne peut pas"
+    },
+    {
+      "en": "Can he?",
+      "es": "peut?"
     },
     {
       "en": "She can",
-      "es": "nous pouvons"
+      "es": "pouvons"
     },
     {
-      "en": "She do not can",
-      "es": "nous ne pouvons pas"
+      "en": "She cannot",
+      "es": "ne pouvons pas"
+    },
+    {
+      "en": "Can she?",
+      "es": "pouvons?"
     },
     {
       "en": "We can",
-      "es": "vous pouvez"
+      "es": "pouvez"
     },
     {
-      "en": "We do not can",
-      "es": "vous ne pouvez pas"
+      "en": "We cannot",
+      "es": "ne pouvez pas"
+    },
+    {
+      "en": "Can we?",
+      "es": "pouvez?"
     },
     {
       "en": "They can",
-      "es": "ils peuvent"
+      "es": "peuvent"
     },
     {
-      "en": "They do not can",
-      "es": "ils ne peuvent pas"
+      "en": "They cannot",
+      "es": "ne peuvent pas"
+    },
+    {
+      "en": "Can they?",
+      "es": "peuvent?"
     },
     {
       "en": "I want",
-      "es": "je veux"
+      "es": "veux"
     },
     {
       "en": "I do not want",
-      "es": "je ne veux pas"
+      "es": "ne veux pas"
     },
     {
-      "en": "You want",
-      "es": "tu veux"
+      "en": "Do i want?",
+      "es": "veux?"
+    },
+    {
+      "en": "You wants",
+      "es": "veux"
     },
     {
       "en": "You do not want",
-      "es": "tu ne veux pas"
+      "es": "ne veux pas"
     },
     {
-      "en": "He want",
-      "es": "il veut"
+      "en": "Do you want?",
+      "es": "veux?"
+    },
+    {
+      "en": "He wants",
+      "es": "veut"
     },
     {
       "en": "He do not want",
-      "es": "il ne veut pas"
+      "es": "ne veut pas"
     },
     {
-      "en": "She want",
-      "es": "nous voulons"
+      "en": "Do he want?",
+      "es": "veut?"
+    },
+    {
+      "en": "She wants",
+      "es": "voulons"
     },
     {
       "en": "She do not want",
-      "es": "nous ne voulons pas"
+      "es": "ne voulons pas"
     },
     {
-      "en": "We want",
-      "es": "vous voulez"
+      "en": "Do she want?",
+      "es": "voulons?"
+    },
+    {
+      "en": "We wants",
+      "es": "voulez"
     },
     {
       "en": "We do not want",
-      "es": "vous ne voulez pas"
+      "es": "ne voulez pas"
     },
     {
-      "en": "They want",
-      "es": "ils veulent"
+      "en": "Do we want?",
+      "es": "voulez?"
+    },
+    {
+      "en": "They wants",
+      "es": "veulent"
     },
     {
       "en": "They do not want",
-      "es": "ils ne veulent pas"
+      "es": "ne veulent pas"
+    },
+    {
+      "en": "Do they want?",
+      "es": "veulent?"
     },
     {
       "en": "I must",
-      "es": "je dois"
+      "es": "dois"
     },
     {
-      "en": "I do not must",
-      "es": "je ne dois pas"
+      "en": "I do not must/has",
+      "es": "ne dois pas"
     },
     {
-      "en": "You must",
-      "es": "tu dois"
+      "en": "Do i must?",
+      "es": "dois?"
     },
     {
-      "en": "You do not must",
-      "es": "tu ne dois pas"
+      "en": "You has to",
+      "es": "dois"
     },
     {
-      "en": "He must",
-      "es": "il doit"
+      "en": "You do not must/has",
+      "es": "ne dois pas"
     },
     {
-      "en": "He do not must",
-      "es": "il ne doit pas"
+      "en": "Do you must?",
+      "es": "dois?"
     },
     {
-      "en": "She must",
-      "es": "nous devons"
+      "en": "He has to",
+      "es": "doit"
     },
     {
-      "en": "She do not must",
-      "es": "nous ne devons pas"
+      "en": "He do not must/has",
+      "es": "ne doit pas"
     },
     {
-      "en": "We must",
-      "es": "vous devez"
+      "en": "Do he must?",
+      "es": "doit?"
     },
     {
-      "en": "We do not must",
-      "es": "vous ne devez pas"
+      "en": "She has to",
+      "es": "devons"
     },
     {
-      "en": "They must",
-      "es": "ils doivent"
+      "en": "She do not must/has",
+      "es": "ne devons pas"
     },
     {
-      "en": "They do not must",
-      "es": "ils ne doivent pas"
+      "en": "Do she must?",
+      "es": "devons?"
+    },
+    {
+      "en": "We has to",
+      "es": "devez"
+    },
+    {
+      "en": "We do not must/has",
+      "es": "ne devez pas"
+    },
+    {
+      "en": "Do we must?",
+      "es": "devez?"
+    },
+    {
+      "en": "They has to",
+      "es": "doivent"
+    },
+    {
+      "en": "They do not must/has",
+      "es": "ne doivent pas"
+    },
+    {
+      "en": "Do they must?",
+      "es": "doivent?"
     },
     {
       "en": "I see",
-      "es": "je vois"
+      "es": "vois"
     },
     {
       "en": "I do not see",
-      "es": "je ne vois pas"
+      "es": "ne vois pas"
     },
     {
-      "en": "You see",
-      "es": "tu vois"
+      "en": "Do i see?",
+      "es": "vois?"
+    },
+    {
+      "en": "You sees",
+      "es": "vois"
     },
     {
       "en": "You do not see",
-      "es": "tu ne vois pas"
+      "es": "ne vois pas"
     },
     {
-      "en": "He see",
-      "es": "il voit"
+      "en": "Do you see?",
+      "es": "vois?"
+    },
+    {
+      "en": "He sees",
+      "es": "voit"
     },
     {
       "en": "He do not see",
-      "es": "il ne voit pas"
+      "es": "ne voit pas"
     },
     {
-      "en": "She see",
-      "es": "nous voyons"
+      "en": "Do he see?",
+      "es": "voit?"
+    },
+    {
+      "en": "She sees",
+      "es": "voyons"
     },
     {
       "en": "She do not see",
-      "es": "nous ne voyons pas"
+      "es": "ne voyons pas"
     },
     {
-      "en": "We see",
-      "es": "vous voyez"
+      "en": "Do she see?",
+      "es": "voyons?"
+    },
+    {
+      "en": "We sees",
+      "es": "voyez"
     },
     {
       "en": "We do not see",
-      "es": "vous ne voyez pas"
+      "es": "ne voyez pas"
     },
     {
-      "en": "They see",
-      "es": "ils voient"
+      "en": "Do we see?",
+      "es": "voyez?"
+    },
+    {
+      "en": "They sees",
+      "es": "voient"
     },
     {
       "en": "They do not see",
-      "es": "ils ne voient pas"
+      "es": "ne voient pas"
+    },
+    {
+      "en": "Do they see?",
+      "es": "voient?"
     },
     {
       "en": "I know",
-      "es": "je sais"
+      "es": "sais"
     },
     {
       "en": "I do not know",
-      "es": "je ne sais pas"
+      "es": "ne sais pas"
     },
     {
-      "en": "You know",
-      "es": "tu sais"
+      "en": "Do i know?",
+      "es": "sais?"
+    },
+    {
+      "en": "You knows",
+      "es": "sais"
     },
     {
       "en": "You do not know",
-      "es": "tu ne sais pas"
+      "es": "ne sais pas"
     },
     {
-      "en": "He know",
-      "es": "il sait"
+      "en": "Do you know?",
+      "es": "sais?"
+    },
+    {
+      "en": "He knows",
+      "es": "sait"
     },
     {
       "en": "He do not know",
-      "es": "il ne sait pas"
+      "es": "ne sait pas"
     },
     {
-      "en": "She know",
-      "es": "nous savons"
+      "en": "Do he know?",
+      "es": "sait?"
+    },
+    {
+      "en": "She knows",
+      "es": "savons"
     },
     {
       "en": "She do not know",
-      "es": "nous ne savons pas"
+      "es": "ne savons pas"
     },
     {
-      "en": "We know",
-      "es": "vous savez"
+      "en": "Do she know?",
+      "es": "savons?"
+    },
+    {
+      "en": "We knows",
+      "es": "savez"
     },
     {
       "en": "We do not know",
-      "es": "vous ne savez pas"
+      "es": "ne savez pas"
     },
     {
-      "en": "They know",
-      "es": "ils savent"
+      "en": "Do we know?",
+      "es": "savez?"
+    },
+    {
+      "en": "They knows",
+      "es": "savent"
     },
     {
       "en": "They do not know",
-      "es": "ils ne savent pas"
+      "es": "ne savent pas"
+    },
+    {
+      "en": "Do they know?",
+      "es": "savent?"
     },
     {
       "en": "I put",
-      "es": "je mets"
+      "es": "mets"
     },
     {
       "en": "I do not put",
-      "es": "je ne mets pas"
+      "es": "ne mets pas"
     },
     {
-      "en": "You put",
-      "es": "tu mets"
+      "en": "Do i put?",
+      "es": "mets?"
+    },
+    {
+      "en": "You puts",
+      "es": "mets"
     },
     {
       "en": "You do not put",
-      "es": "tu ne mets pas"
+      "es": "ne mets pas"
     },
     {
-      "en": "He put",
-      "es": "il met"
+      "en": "Do you put?",
+      "es": "mets?"
+    },
+    {
+      "en": "He puts",
+      "es": "met"
     },
     {
       "en": "He do not put",
-      "es": "il ne met pas"
+      "es": "ne met pas"
     },
     {
-      "en": "She put",
-      "es": "nous mettons"
+      "en": "Do he put?",
+      "es": "met?"
+    },
+    {
+      "en": "She puts",
+      "es": "mettons"
     },
     {
       "en": "She do not put",
-      "es": "nous ne mettons pas"
+      "es": "ne mettons pas"
     },
     {
-      "en": "We put",
-      "es": "vous mettez"
+      "en": "Do she put?",
+      "es": "mettons?"
+    },
+    {
+      "en": "We puts",
+      "es": "mettez"
     },
     {
       "en": "We do not put",
-      "es": "vous ne mettez pas"
+      "es": "ne mettez pas"
     },
     {
-      "en": "They put",
-      "es": "ils mettent"
+      "en": "Do we put?",
+      "es": "mettez?"
+    },
+    {
+      "en": "They puts",
+      "es": "mettent"
     },
     {
       "en": "They do not put",
-      "es": "ils ne mettent pas"
+      "es": "ne mettent pas"
+    },
+    {
+      "en": "Do they put?",
+      "es": "mettent?"
     },
     {
       "en": "I go out",
-      "es": "je sors"
+      "es": "sors"
     },
     {
-      "en": "I do not go out",
-      "es": "je ne sors pas"
+      "en": "I do not go",
+      "es": "ne sors pas"
     },
     {
-      "en": "You go out",
-      "es": "tu sors"
+      "en": "Do i go out?",
+      "es": "sors?"
     },
     {
-      "en": "You do not go out",
-      "es": "tu ne sors pas"
+      "en": "You goes out",
+      "es": "sors"
     },
     {
-      "en": "He go out",
-      "es": "il sort"
+      "en": "You do not go",
+      "es": "ne sors pas"
     },
     {
-      "en": "He do not go out",
-      "es": "il ne sort pas"
+      "en": "Do you go out?",
+      "es": "sors?"
     },
     {
-      "en": "She go out",
-      "es": "nous sortons"
+      "en": "He goes out",
+      "es": "sort"
     },
     {
-      "en": "She do not go out",
-      "es": "nous ne sortons pas"
+      "en": "He do not go",
+      "es": "ne sort pas"
     },
     {
-      "en": "We go out",
-      "es": "vous sortez"
+      "en": "Do he go out?",
+      "es": "sort?"
     },
     {
-      "en": "We do not go out",
-      "es": "vous ne sortez pas"
+      "en": "She goes out",
+      "es": "sortons"
     },
     {
-      "en": "They go out",
-      "es": "ils sortent"
+      "en": "She do not go",
+      "es": "ne sortons pas"
     },
     {
-      "en": "They do not go out",
-      "es": "ils ne sortent pas"
+      "en": "Do she go out?",
+      "es": "sortons?"
+    },
+    {
+      "en": "We goes out",
+      "es": "sortez"
+    },
+    {
+      "en": "We do not go",
+      "es": "ne sortez pas"
+    },
+    {
+      "en": "Do we go out?",
+      "es": "sortez?"
+    },
+    {
+      "en": "They goes out",
+      "es": "sortent"
+    },
+    {
+      "en": "They do not go",
+      "es": "ne sortent pas"
+    },
+    {
+      "en": "Do they go out?",
+      "es": "sortent?"
     },
     {
       "en": "I leave",
-      "es": "je pars"
+      "es": "pars"
     },
     {
       "en": "I do not leave",
-      "es": "je ne pars pas"
+      "es": "ne pars pas"
     },
     {
-      "en": "You leave",
-      "es": "tu pars"
+      "en": "Do i leave?",
+      "es": "pars?"
+    },
+    {
+      "en": "You leaves",
+      "es": "pars"
     },
     {
       "en": "You do not leave",
-      "es": "tu ne pars pas"
+      "es": "ne pars pas"
     },
     {
-      "en": "He leave",
-      "es": "il part"
+      "en": "Do you leave?",
+      "es": "pars?"
+    },
+    {
+      "en": "He leaves",
+      "es": "part"
     },
     {
       "en": "He do not leave",
-      "es": "il ne part pas"
+      "es": "ne part pas"
     },
     {
-      "en": "She leave",
-      "es": "nous partons"
+      "en": "Do he leave?",
+      "es": "part?"
+    },
+    {
+      "en": "She leaves",
+      "es": "partons"
     },
     {
       "en": "She do not leave",
-      "es": "nous ne partons pas"
+      "es": "ne partons pas"
     },
     {
-      "en": "We leave",
-      "es": "vous partez"
+      "en": "Do she leave?",
+      "es": "partons?"
+    },
+    {
+      "en": "We leaves",
+      "es": "partez"
     },
     {
       "en": "We do not leave",
-      "es": "vous ne partez pas"
+      "es": "ne partez pas"
     },
     {
-      "en": "They leave",
-      "es": "ils partent"
+      "en": "Do we leave?",
+      "es": "partez?"
+    },
+    {
+      "en": "They leaves",
+      "es": "partent"
     },
     {
       "en": "They do not leave",
-      "es": "ils ne partent pas"
+      "es": "ne partent pas"
+    },
+    {
+      "en": "Do they leave?",
+      "es": "partent?"
     },
     {
       "en": "I say",
-      "es": "je dis"
+      "es": "dis"
     },
     {
       "en": "I do not say",
-      "es": "je ne dis pas"
+      "es": "ne dis pas"
     },
     {
-      "en": "You say",
-      "es": "tu dis"
+      "en": "Do i say?",
+      "es": "dis?"
+    },
+    {
+      "en": "You says",
+      "es": "dis"
     },
     {
       "en": "You do not say",
-      "es": "tu ne dis pas"
+      "es": "ne dis pas"
     },
     {
-      "en": "He say",
-      "es": "il dit"
+      "en": "Do you say?",
+      "es": "dis?"
+    },
+    {
+      "en": "He says",
+      "es": "dit"
     },
     {
       "en": "He do not say",
-      "es": "il ne dit pas"
+      "es": "ne dit pas"
     },
     {
-      "en": "She say",
-      "es": "nous disons"
+      "en": "Do he say?",
+      "es": "dit?"
+    },
+    {
+      "en": "She says",
+      "es": "disons"
     },
     {
       "en": "She do not say",
-      "es": "nous ne disons pas"
+      "es": "ne disons pas"
     },
     {
-      "en": "We say",
-      "es": "vous dites"
+      "en": "Do she say?",
+      "es": "disons?"
+    },
+    {
+      "en": "We says",
+      "es": "dites"
     },
     {
       "en": "We do not say",
-      "es": "vous ne dites pas"
+      "es": "ne dites pas"
     },
     {
-      "en": "They say",
-      "es": "ils disent"
+      "en": "Do we say?",
+      "es": "dites?"
+    },
+    {
+      "en": "They says",
+      "es": "disent"
     },
     {
       "en": "They do not say",
-      "es": "ils ne disent pas"
+      "es": "ne disent pas"
+    },
+    {
+      "en": "Do they say?",
+      "es": "disent?"
     },
     {
       "en": "I write",
-      "es": "je écris"
+      "es": "écris"
     },
     {
       "en": "I do not write",
-      "es": "je ne écris pas"
+      "es": "n'écris pas"
     },
     {
-      "en": "You write",
-      "es": "tu écris"
+      "en": "Do i write?",
+      "es": "écris?"
+    },
+    {
+      "en": "You writes",
+      "es": "écris"
     },
     {
       "en": "You do not write",
-      "es": "tu ne écris pas"
+      "es": "n'écris pas"
     },
     {
-      "en": "He write",
-      "es": "il écrit"
+      "en": "Do you write?",
+      "es": "écris?"
+    },
+    {
+      "en": "He writes",
+      "es": "écrit"
     },
     {
       "en": "He do not write",
-      "es": "il ne écrit pas"
+      "es": "n'écrit pas"
     },
     {
-      "en": "She write",
-      "es": "nous écrivons"
+      "en": "Do he write?",
+      "es": "écrit?"
+    },
+    {
+      "en": "She writes",
+      "es": "écrivons"
     },
     {
       "en": "She do not write",
-      "es": "nous ne écrivons pas"
+      "es": "n'écrivons pas"
     },
     {
-      "en": "We write",
-      "es": "vous écrivez"
+      "en": "Do she write?",
+      "es": "écrivons?"
+    },
+    {
+      "en": "We writes",
+      "es": "écrivez"
     },
     {
       "en": "We do not write",
-      "es": "vous ne écrivez pas"
+      "es": "n'écrivez pas"
     },
     {
-      "en": "They write",
-      "es": "ils écrivent"
+      "en": "Do we write?",
+      "es": "écrivez?"
+    },
+    {
+      "en": "They writes",
+      "es": "écrivent"
     },
     {
       "en": "They do not write",
-      "es": "ils ne écrivent pas"
+      "es": "n'écrivent pas"
+    },
+    {
+      "en": "Do they write?",
+      "es": "écrivent?"
     },
     {
       "en": "I read",
-      "es": "je lis"
+      "es": "lis"
     },
     {
       "en": "I do not read",
-      "es": "je ne lis pas"
+      "es": "ne lis pas"
     },
     {
-      "en": "You read",
-      "es": "tu lis"
+      "en": "Do i read?",
+      "es": "lis?"
+    },
+    {
+      "en": "You reads",
+      "es": "lis"
     },
     {
       "en": "You do not read",
-      "es": "tu ne lis pas"
+      "es": "ne lis pas"
     },
     {
-      "en": "He read",
-      "es": "il lit"
+      "en": "Do you read?",
+      "es": "lis?"
+    },
+    {
+      "en": "He reads",
+      "es": "lit"
     },
     {
       "en": "He do not read",
-      "es": "il ne lit pas"
+      "es": "ne lit pas"
     },
     {
-      "en": "She read",
-      "es": "nous lisons"
+      "en": "Do he read?",
+      "es": "lit?"
+    },
+    {
+      "en": "She reads",
+      "es": "lisons"
     },
     {
       "en": "She do not read",
-      "es": "nous ne lisons pas"
+      "es": "ne lisons pas"
     },
     {
-      "en": "We read",
-      "es": "vous lisez"
+      "en": "Do she read?",
+      "es": "lisons?"
+    },
+    {
+      "en": "We reads",
+      "es": "lisez"
     },
     {
       "en": "We do not read",
-      "es": "vous ne lisez pas"
+      "es": "ne lisez pas"
     },
     {
-      "en": "They read",
-      "es": "ils lisent"
+      "en": "Do we read?",
+      "es": "lisez?"
+    },
+    {
+      "en": "They reads",
+      "es": "lisent"
     },
     {
       "en": "They do not read",
-      "es": "ils ne lisent pas"
+      "es": "ne lisent pas"
+    },
+    {
+      "en": "Do they read?",
+      "es": "lisent?"
     }
   ],
   "Past": [
     {
-      "en": "I was",
-      "es": "j'ai été"
+      "en": "I was/were",
+      "es": "ai été"
     },
     {
-      "en": "I did not was",
-      "es": "j'ai ne été pas"
+      "en": "I did not was/were",
+      "es": "n'ai été pas"
     },
     {
-      "en": "You was",
-      "es": "tu as été"
+      "en": "Did i was/were?",
+      "es": "ai été?"
     },
     {
-      "en": "You did not was",
-      "es": "tu ne as été pas"
+      "en": "You was/were",
+      "es": "as été"
     },
     {
-      "en": "He was",
-      "es": "il a été"
+      "en": "You did not was/were",
+      "es": "n'as été pas"
     },
     {
-      "en": "He did not was",
-      "es": "il ne a été pas"
+      "en": "Did you was/were?",
+      "es": "as été?"
     },
     {
-      "en": "She was",
-      "es": "nous avons été"
+      "en": "He was/were",
+      "es": "a été"
     },
     {
-      "en": "She did not was",
-      "es": "nous ne avons été pas"
+      "en": "He did not was/were",
+      "es": "n'a été pas"
     },
     {
-      "en": "We was",
-      "es": "vous avez été"
+      "en": "Did he was/were?",
+      "es": "a été?"
     },
     {
-      "en": "We did not was",
-      "es": "vous ne avez été pas"
+      "en": "She was/were",
+      "es": "avons été"
     },
     {
-      "en": "They was",
-      "es": "ils ont été"
+      "en": "She did not was/were",
+      "es": "n'avons été pas"
     },
     {
-      "en": "They did not was",
-      "es": "ils ne ont été pas"
+      "en": "Did she was/were?",
+      "es": "avons été?"
+    },
+    {
+      "en": "We was/were",
+      "es": "avez été"
+    },
+    {
+      "en": "We did not was/were",
+      "es": "n'avez été pas"
+    },
+    {
+      "en": "Did we was/were?",
+      "es": "avez été?"
+    },
+    {
+      "en": "They was/were",
+      "es": "ont été"
+    },
+    {
+      "en": "They did not was/were",
+      "es": "n'ont été pas"
+    },
+    {
+      "en": "Did they was/were?",
+      "es": "ont été?"
     },
     {
       "en": "I had",
-      "es": "j'ai eu"
+      "es": "ai eu"
     },
     {
       "en": "I did not had",
-      "es": "j'ai ne eu pas"
+      "es": "n'ai eu pas"
+    },
+    {
+      "en": "Did i had?",
+      "es": "ai eu?"
     },
     {
       "en": "You had",
-      "es": "tu as eu"
+      "es": "as eu"
     },
     {
       "en": "You did not had",
-      "es": "tu ne as eu pas"
+      "es": "n'as eu pas"
+    },
+    {
+      "en": "Did you had?",
+      "es": "as eu?"
     },
     {
       "en": "He had",
-      "es": "il a eu"
+      "es": "a eu"
     },
     {
       "en": "He did not had",
-      "es": "il ne a eu pas"
+      "es": "n'a eu pas"
+    },
+    {
+      "en": "Did he had?",
+      "es": "a eu?"
     },
     {
       "en": "She had",
-      "es": "nous avons eu"
+      "es": "avons eu"
     },
     {
       "en": "She did not had",
-      "es": "nous ne avons eu pas"
+      "es": "n'avons eu pas"
+    },
+    {
+      "en": "Did she had?",
+      "es": "avons eu?"
     },
     {
       "en": "We had",
-      "es": "vous avez eu"
+      "es": "avez eu"
     },
     {
       "en": "We did not had",
-      "es": "vous ne avez eu pas"
+      "es": "n'avez eu pas"
+    },
+    {
+      "en": "Did we had?",
+      "es": "avez eu?"
     },
     {
       "en": "They had",
-      "es": "ils ont eu"
+      "es": "ont eu"
     },
     {
       "en": "They did not had",
-      "es": "ils ne ont eu pas"
+      "es": "n'ont eu pas"
+    },
+    {
+      "en": "Did they had?",
+      "es": "ont eu?"
     },
     {
       "en": "I went",
-      "es": "je suis allé"
+      "es": "suis allé"
     },
     {
       "en": "I did not went",
-      "es": "je ne suis allé pas"
+      "es": "ne suis allé pas"
+    },
+    {
+      "en": "Did i went?",
+      "es": "suis allé?"
     },
     {
       "en": "You went",
-      "es": "tu es allé"
+      "es": "es allé"
     },
     {
       "en": "You did not went",
-      "es": "tu ne es allé pas"
+      "es": "n'es allé pas"
+    },
+    {
+      "en": "Did you went?",
+      "es": "es allé?"
     },
     {
       "en": "He went",
-      "es": "il est allé"
+      "es": "est allé"
     },
     {
       "en": "He did not went",
-      "es": "il ne est allé pas"
+      "es": "n'est allé pas"
+    },
+    {
+      "en": "Did he went?",
+      "es": "est allé?"
     },
     {
       "en": "She went",
-      "es": "nous sommes allé"
+      "es": "sommes allé"
     },
     {
       "en": "She did not went",
-      "es": "nous ne sommes allé pas"
+      "es": "ne sommes allé pas"
+    },
+    {
+      "en": "Did she went?",
+      "es": "sommes allé?"
     },
     {
       "en": "We went",
-      "es": "vous êtes allé"
+      "es": "êtes allé"
     },
     {
       "en": "We did not went",
-      "es": "vous ne êtes allé pas"
+      "es": "n'êtes allé pas"
+    },
+    {
+      "en": "Did we went?",
+      "es": "êtes allé?"
     },
     {
       "en": "They went",
-      "es": "ils sont allé"
+      "es": "sont allé"
     },
     {
       "en": "They did not went",
-      "es": "ils ne sont allé pas"
+      "es": "ne sont allé pas"
+    },
+    {
+      "en": "Did they went?",
+      "es": "sont allé?"
     },
     {
       "en": "I did",
-      "es": "j'ai fait"
+      "es": "ai fait"
     },
     {
       "en": "I did not did",
-      "es": "j'ai ne fait pas"
+      "es": "n'ai fait pas"
+    },
+    {
+      "en": "Did i did?",
+      "es": "ai fait?"
     },
     {
       "en": "You did",
-      "es": "tu as fait"
+      "es": "as fait"
     },
     {
       "en": "You did not did",
-      "es": "tu ne as fait pas"
+      "es": "n'as fait pas"
+    },
+    {
+      "en": "Did you did?",
+      "es": "as fait?"
     },
     {
       "en": "He did",
-      "es": "il a fait"
+      "es": "a fait"
     },
     {
       "en": "He did not did",
-      "es": "il ne a fait pas"
+      "es": "n'a fait pas"
+    },
+    {
+      "en": "Did he did?",
+      "es": "a fait?"
     },
     {
       "en": "She did",
-      "es": "nous avons fait"
+      "es": "avons fait"
     },
     {
       "en": "She did not did",
-      "es": "nous ne avons fait pas"
+      "es": "n'avons fait pas"
+    },
+    {
+      "en": "Did she did?",
+      "es": "avons fait?"
     },
     {
       "en": "We did",
-      "es": "vous avez fait"
+      "es": "avez fait"
     },
     {
       "en": "We did not did",
-      "es": "vous ne avez fait pas"
+      "es": "n'avez fait pas"
+    },
+    {
+      "en": "Did we did?",
+      "es": "avez fait?"
     },
     {
       "en": "They did",
-      "es": "ils ont fait"
+      "es": "ont fait"
     },
     {
       "en": "They did not did",
-      "es": "ils ne ont fait pas"
+      "es": "n'ont fait pas"
+    },
+    {
+      "en": "Did they did?",
+      "es": "ont fait?"
     },
     {
       "en": "I spoke",
-      "es": "j'ai parlé"
+      "es": "ai parlé"
     },
     {
       "en": "I did not spoke",
-      "es": "j'ai ne parlé pas"
+      "es": "n'ai parlé pas"
+    },
+    {
+      "en": "Did i spoke?",
+      "es": "ai parlé?"
     },
     {
       "en": "You spoke",
-      "es": "tu as parlé"
+      "es": "as parlé"
     },
     {
       "en": "You did not spoke",
-      "es": "tu ne as parlé pas"
+      "es": "n'as parlé pas"
+    },
+    {
+      "en": "Did you spoke?",
+      "es": "as parlé?"
     },
     {
       "en": "He spoke",
-      "es": "il a parlé"
+      "es": "a parlé"
     },
     {
       "en": "He did not spoke",
-      "es": "il ne a parlé pas"
+      "es": "n'a parlé pas"
+    },
+    {
+      "en": "Did he spoke?",
+      "es": "a parlé?"
     },
     {
       "en": "She spoke",
-      "es": "nous avons parlé"
+      "es": "avons parlé"
     },
     {
       "en": "She did not spoke",
-      "es": "nous ne avons parlé pas"
+      "es": "n'avons parlé pas"
+    },
+    {
+      "en": "Did she spoke?",
+      "es": "avons parlé?"
     },
     {
       "en": "We spoke",
-      "es": "vous avez parlé"
+      "es": "avez parlé"
     },
     {
       "en": "We did not spoke",
-      "es": "vous ne avez parlé pas"
+      "es": "n'avez parlé pas"
+    },
+    {
+      "en": "Did we spoke?",
+      "es": "avez parlé?"
     },
     {
       "en": "They spoke",
-      "es": "ils ont parlé"
+      "es": "ont parlé"
     },
     {
       "en": "They did not spoke",
-      "es": "ils ne ont parlé pas"
+      "es": "n'ont parlé pas"
+    },
+    {
+      "en": "Did they spoke?",
+      "es": "ont parlé?"
     },
     {
       "en": "I finished",
-      "es": "j'ai fini"
+      "es": "ai fini"
     },
     {
       "en": "I did not finished",
-      "es": "j'ai ne fini pas"
+      "es": "n'ai fini pas"
+    },
+    {
+      "en": "Did i finished?",
+      "es": "ai fini?"
     },
     {
       "en": "You finished",
-      "es": "tu as fini"
+      "es": "as fini"
     },
     {
       "en": "You did not finished",
-      "es": "tu ne as fini pas"
+      "es": "n'as fini pas"
+    },
+    {
+      "en": "Did you finished?",
+      "es": "as fini?"
     },
     {
       "en": "He finished",
-      "es": "il a fini"
+      "es": "a fini"
     },
     {
       "en": "He did not finished",
-      "es": "il ne a fini pas"
+      "es": "n'a fini pas"
+    },
+    {
+      "en": "Did he finished?",
+      "es": "a fini?"
     },
     {
       "en": "She finished",
-      "es": "nous avons fini"
+      "es": "avons fini"
     },
     {
       "en": "She did not finished",
-      "es": "nous ne avons fini pas"
+      "es": "n'avons fini pas"
+    },
+    {
+      "en": "Did she finished?",
+      "es": "avons fini?"
     },
     {
       "en": "We finished",
-      "es": "vous avez fini"
+      "es": "avez fini"
     },
     {
       "en": "We did not finished",
-      "es": "vous ne avez fini pas"
+      "es": "n'avez fini pas"
+    },
+    {
+      "en": "Did we finished?",
+      "es": "avez fini?"
     },
     {
       "en": "They finished",
-      "es": "ils ont fini"
+      "es": "ont fini"
     },
     {
       "en": "They did not finished",
-      "es": "ils ne ont fini pas"
+      "es": "n'ont fini pas"
+    },
+    {
+      "en": "Did they finished?",
+      "es": "ont fini?"
     },
     {
       "en": "I took",
-      "es": "j'ai pris"
+      "es": "ai pris"
     },
     {
       "en": "I did not took",
-      "es": "j'ai ne pris pas"
+      "es": "n'ai pris pas"
+    },
+    {
+      "en": "Did i took?",
+      "es": "ai pris?"
     },
     {
       "en": "You took",
-      "es": "tu as pris"
+      "es": "as pris"
     },
     {
       "en": "You did not took",
-      "es": "tu ne as pris pas"
+      "es": "n'as pris pas"
+    },
+    {
+      "en": "Did you took?",
+      "es": "as pris?"
     },
     {
       "en": "He took",
-      "es": "il a pris"
+      "es": "a pris"
     },
     {
       "en": "He did not took",
-      "es": "il ne a pris pas"
+      "es": "n'a pris pas"
+    },
+    {
+      "en": "Did he took?",
+      "es": "a pris?"
     },
     {
       "en": "She took",
-      "es": "nous avons pris"
+      "es": "avons pris"
     },
     {
       "en": "She did not took",
-      "es": "nous ne avons pris pas"
+      "es": "n'avons pris pas"
+    },
+    {
+      "en": "Did she took?",
+      "es": "avons pris?"
     },
     {
       "en": "We took",
-      "es": "vous avez pris"
+      "es": "avez pris"
     },
     {
       "en": "We did not took",
-      "es": "vous ne avez pris pas"
+      "es": "n'avez pris pas"
+    },
+    {
+      "en": "Did we took?",
+      "es": "avez pris?"
     },
     {
       "en": "They took",
-      "es": "ils ont pris"
+      "es": "ont pris"
     },
     {
       "en": "They did not took",
-      "es": "ils ne ont pris pas"
+      "es": "n'ont pris pas"
+    },
+    {
+      "en": "Did they took?",
+      "es": "ont pris?"
     },
     {
       "en": "I came",
-      "es": "je suis venu"
+      "es": "suis venu"
     },
     {
       "en": "I did not came",
-      "es": "je ne suis venu pas"
+      "es": "ne suis venu pas"
+    },
+    {
+      "en": "Did i came?",
+      "es": "suis venu?"
     },
     {
       "en": "You came",
-      "es": "tu es venu"
+      "es": "es venu"
     },
     {
       "en": "You did not came",
-      "es": "tu ne es venu pas"
+      "es": "n'es venu pas"
+    },
+    {
+      "en": "Did you came?",
+      "es": "es venu?"
     },
     {
       "en": "He came",
-      "es": "il est venu"
+      "es": "est venu"
     },
     {
       "en": "He did not came",
-      "es": "il ne est venu pas"
+      "es": "n'est venu pas"
+    },
+    {
+      "en": "Did he came?",
+      "es": "est venu?"
     },
     {
       "en": "She came",
-      "es": "nous sommes venu"
+      "es": "sommes venu"
     },
     {
       "en": "She did not came",
-      "es": "nous ne sommes venu pas"
+      "es": "ne sommes venu pas"
+    },
+    {
+      "en": "Did she came?",
+      "es": "sommes venu?"
     },
     {
       "en": "We came",
-      "es": "vous êtes venu"
+      "es": "êtes venu"
     },
     {
       "en": "We did not came",
-      "es": "vous ne êtes venu pas"
+      "es": "n'êtes venu pas"
+    },
+    {
+      "en": "Did we came?",
+      "es": "êtes venu?"
     },
     {
       "en": "They came",
-      "es": "ils sont venu"
+      "es": "sont venu"
     },
     {
       "en": "They did not came",
-      "es": "ils ne sont venu pas"
+      "es": "ne sont venu pas"
+    },
+    {
+      "en": "Did they came?",
+      "es": "sont venu?"
     },
     {
       "en": "I could",
-      "es": "j'ai pu"
+      "es": "ai pu"
     },
     {
       "en": "I did not could",
-      "es": "j'ai ne pu pas"
+      "es": "n'ai pu pas"
+    },
+    {
+      "en": "Did i could?",
+      "es": "ai pu?"
     },
     {
       "en": "You could",
-      "es": "tu as pu"
+      "es": "as pu"
     },
     {
       "en": "You did not could",
-      "es": "tu ne as pu pas"
+      "es": "n'as pu pas"
+    },
+    {
+      "en": "Did you could?",
+      "es": "as pu?"
     },
     {
       "en": "He could",
-      "es": "il a pu"
+      "es": "a pu"
     },
     {
       "en": "He did not could",
-      "es": "il ne a pu pas"
+      "es": "n'a pu pas"
+    },
+    {
+      "en": "Did he could?",
+      "es": "a pu?"
     },
     {
       "en": "She could",
-      "es": "nous avons pu"
+      "es": "avons pu"
     },
     {
       "en": "She did not could",
-      "es": "nous ne avons pu pas"
+      "es": "n'avons pu pas"
+    },
+    {
+      "en": "Did she could?",
+      "es": "avons pu?"
     },
     {
       "en": "We could",
-      "es": "vous avez pu"
+      "es": "avez pu"
     },
     {
       "en": "We did not could",
-      "es": "vous ne avez pu pas"
+      "es": "n'avez pu pas"
+    },
+    {
+      "en": "Did we could?",
+      "es": "avez pu?"
     },
     {
       "en": "They could",
-      "es": "ils ont pu"
+      "es": "ont pu"
     },
     {
       "en": "They did not could",
-      "es": "ils ne ont pu pas"
+      "es": "n'ont pu pas"
+    },
+    {
+      "en": "Did they could?",
+      "es": "ont pu?"
     },
     {
       "en": "I wanted",
-      "es": "j'ai voulu"
+      "es": "ai voulu"
     },
     {
       "en": "I did not wanted",
-      "es": "j'ai ne voulu pas"
+      "es": "n'ai voulu pas"
+    },
+    {
+      "en": "Did i wanted?",
+      "es": "ai voulu?"
     },
     {
       "en": "You wanted",
-      "es": "tu as voulu"
+      "es": "as voulu"
     },
     {
       "en": "You did not wanted",
-      "es": "tu ne as voulu pas"
+      "es": "n'as voulu pas"
+    },
+    {
+      "en": "Did you wanted?",
+      "es": "as voulu?"
     },
     {
       "en": "He wanted",
-      "es": "il a voulu"
+      "es": "a voulu"
     },
     {
       "en": "He did not wanted",
-      "es": "il ne a voulu pas"
+      "es": "n'a voulu pas"
+    },
+    {
+      "en": "Did he wanted?",
+      "es": "a voulu?"
     },
     {
       "en": "She wanted",
-      "es": "nous avons voulu"
+      "es": "avons voulu"
     },
     {
       "en": "She did not wanted",
-      "es": "nous ne avons voulu pas"
+      "es": "n'avons voulu pas"
+    },
+    {
+      "en": "Did she wanted?",
+      "es": "avons voulu?"
     },
     {
       "en": "We wanted",
-      "es": "vous avez voulu"
+      "es": "avez voulu"
     },
     {
       "en": "We did not wanted",
-      "es": "vous ne avez voulu pas"
+      "es": "n'avez voulu pas"
+    },
+    {
+      "en": "Did we wanted?",
+      "es": "avez voulu?"
     },
     {
       "en": "They wanted",
-      "es": "ils ont voulu"
+      "es": "ont voulu"
     },
     {
       "en": "They did not wanted",
-      "es": "ils ne ont voulu pas"
+      "es": "n'ont voulu pas"
+    },
+    {
+      "en": "Did they wanted?",
+      "es": "ont voulu?"
     },
     {
       "en": "I had to",
-      "es": "j'ai dû"
+      "es": "ai dû"
     },
     {
       "en": "I did not to",
-      "es": "j'ai ne dû pas"
+      "es": "n'ai dû pas"
+    },
+    {
+      "en": "Did i to?",
+      "es": "ai dû?"
     },
     {
       "en": "You had to",
-      "es": "tu as dû"
+      "es": "as dû"
     },
     {
       "en": "You did not to",
-      "es": "tu ne as dû pas"
+      "es": "n'as dû pas"
+    },
+    {
+      "en": "Did you to?",
+      "es": "as dû?"
     },
     {
       "en": "He had to",
-      "es": "il a dû"
+      "es": "a dû"
     },
     {
       "en": "He did not to",
-      "es": "il ne a dû pas"
+      "es": "n'a dû pas"
+    },
+    {
+      "en": "Did he to?",
+      "es": "a dû?"
     },
     {
       "en": "She had to",
-      "es": "nous avons dû"
+      "es": "avons dû"
     },
     {
       "en": "She did not to",
-      "es": "nous ne avons dû pas"
+      "es": "n'avons dû pas"
+    },
+    {
+      "en": "Did she to?",
+      "es": "avons dû?"
     },
     {
       "en": "We had to",
-      "es": "vous avez dû"
+      "es": "avez dû"
     },
     {
       "en": "We did not to",
-      "es": "vous ne avez dû pas"
+      "es": "n'avez dû pas"
+    },
+    {
+      "en": "Did we to?",
+      "es": "avez dû?"
     },
     {
       "en": "They had to",
-      "es": "ils ont dû"
+      "es": "ont dû"
     },
     {
       "en": "They did not to",
-      "es": "ils ne ont dû pas"
+      "es": "n'ont dû pas"
+    },
+    {
+      "en": "Did they to?",
+      "es": "ont dû?"
     },
     {
       "en": "I saw",
-      "es": "j'ai vu"
+      "es": "ai vu"
     },
     {
       "en": "I did not saw",
-      "es": "j'ai ne vu pas"
+      "es": "n'ai vu pas"
+    },
+    {
+      "en": "Did i saw?",
+      "es": "ai vu?"
     },
     {
       "en": "You saw",
-      "es": "tu as vu"
+      "es": "as vu"
     },
     {
       "en": "You did not saw",
-      "es": "tu ne as vu pas"
+      "es": "n'as vu pas"
+    },
+    {
+      "en": "Did you saw?",
+      "es": "as vu?"
     },
     {
       "en": "He saw",
-      "es": "il a vu"
+      "es": "a vu"
     },
     {
       "en": "He did not saw",
-      "es": "il ne a vu pas"
+      "es": "n'a vu pas"
+    },
+    {
+      "en": "Did he saw?",
+      "es": "a vu?"
     },
     {
       "en": "She saw",
-      "es": "nous avons vu"
+      "es": "avons vu"
     },
     {
       "en": "She did not saw",
-      "es": "nous ne avons vu pas"
+      "es": "n'avons vu pas"
+    },
+    {
+      "en": "Did she saw?",
+      "es": "avons vu?"
     },
     {
       "en": "We saw",
-      "es": "vous avez vu"
+      "es": "avez vu"
     },
     {
       "en": "We did not saw",
-      "es": "vous ne avez vu pas"
+      "es": "n'avez vu pas"
+    },
+    {
+      "en": "Did we saw?",
+      "es": "avez vu?"
     },
     {
       "en": "They saw",
-      "es": "ils ont vu"
+      "es": "ont vu"
     },
     {
       "en": "They did not saw",
-      "es": "ils ne ont vu pas"
+      "es": "n'ont vu pas"
+    },
+    {
+      "en": "Did they saw?",
+      "es": "ont vu?"
     },
     {
       "en": "I knew",
-      "es": "j'ai su"
+      "es": "ai su"
     },
     {
       "en": "I did not knew",
-      "es": "j'ai ne su pas"
+      "es": "n'ai su pas"
+    },
+    {
+      "en": "Did i knew?",
+      "es": "ai su?"
     },
     {
       "en": "You knew",
-      "es": "tu as su"
+      "es": "as su"
     },
     {
       "en": "You did not knew",
-      "es": "tu ne as su pas"
+      "es": "n'as su pas"
+    },
+    {
+      "en": "Did you knew?",
+      "es": "as su?"
     },
     {
       "en": "He knew",
-      "es": "il a su"
+      "es": "a su"
     },
     {
       "en": "He did not knew",
-      "es": "il ne a su pas"
+      "es": "n'a su pas"
+    },
+    {
+      "en": "Did he knew?",
+      "es": "a su?"
     },
     {
       "en": "She knew",
-      "es": "nous avons su"
+      "es": "avons su"
     },
     {
       "en": "She did not knew",
-      "es": "nous ne avons su pas"
+      "es": "n'avons su pas"
+    },
+    {
+      "en": "Did she knew?",
+      "es": "avons su?"
     },
     {
       "en": "We knew",
-      "es": "vous avez su"
+      "es": "avez su"
     },
     {
       "en": "We did not knew",
-      "es": "vous ne avez su pas"
+      "es": "n'avez su pas"
+    },
+    {
+      "en": "Did we knew?",
+      "es": "avez su?"
     },
     {
       "en": "They knew",
-      "es": "ils ont su"
+      "es": "ont su"
     },
     {
       "en": "They did not knew",
-      "es": "ils ne ont su pas"
+      "es": "n'ont su pas"
+    },
+    {
+      "en": "Did they knew?",
+      "es": "ont su?"
     },
     {
       "en": "I put",
-      "es": "j'ai mis"
+      "es": "ai mis"
     },
     {
       "en": "I did not put",
-      "es": "j'ai ne mis pas"
+      "es": "n'ai mis pas"
+    },
+    {
+      "en": "Did i put?",
+      "es": "ai mis?"
     },
     {
       "en": "You put",
-      "es": "tu as mis"
+      "es": "as mis"
     },
     {
       "en": "You did not put",
-      "es": "tu ne as mis pas"
+      "es": "n'as mis pas"
+    },
+    {
+      "en": "Did you put?",
+      "es": "as mis?"
     },
     {
       "en": "He put",
-      "es": "il a mis"
+      "es": "a mis"
     },
     {
       "en": "He did not put",
-      "es": "il ne a mis pas"
+      "es": "n'a mis pas"
+    },
+    {
+      "en": "Did he put?",
+      "es": "a mis?"
     },
     {
       "en": "She put",
-      "es": "nous avons mis"
+      "es": "avons mis"
     },
     {
       "en": "She did not put",
-      "es": "nous ne avons mis pas"
+      "es": "n'avons mis pas"
+    },
+    {
+      "en": "Did she put?",
+      "es": "avons mis?"
     },
     {
       "en": "We put",
-      "es": "vous avez mis"
+      "es": "avez mis"
     },
     {
       "en": "We did not put",
-      "es": "vous ne avez mis pas"
+      "es": "n'avez mis pas"
+    },
+    {
+      "en": "Did we put?",
+      "es": "avez mis?"
     },
     {
       "en": "They put",
-      "es": "ils ont mis"
+      "es": "ont mis"
     },
     {
       "en": "They did not put",
-      "es": "ils ne ont mis pas"
+      "es": "n'ont mis pas"
+    },
+    {
+      "en": "Did they put?",
+      "es": "ont mis?"
     },
     {
       "en": "I went out",
-      "es": "je suis sorti"
+      "es": "suis sorti"
     },
     {
       "en": "I did not out",
-      "es": "je ne suis sorti pas"
+      "es": "ne suis sorti pas"
+    },
+    {
+      "en": "Did i out?",
+      "es": "suis sorti?"
     },
     {
       "en": "You went out",
-      "es": "tu es sorti"
+      "es": "es sorti"
     },
     {
       "en": "You did not out",
-      "es": "tu ne es sorti pas"
+      "es": "n'es sorti pas"
+    },
+    {
+      "en": "Did you out?",
+      "es": "es sorti?"
     },
     {
       "en": "He went out",
-      "es": "il est sorti"
+      "es": "est sorti"
     },
     {
       "en": "He did not out",
-      "es": "il ne est sorti pas"
+      "es": "n'est sorti pas"
+    },
+    {
+      "en": "Did he out?",
+      "es": "est sorti?"
     },
     {
       "en": "She went out",
-      "es": "nous sommes sorti"
+      "es": "sommes sorti"
     },
     {
       "en": "She did not out",
-      "es": "nous ne sommes sorti pas"
+      "es": "ne sommes sorti pas"
+    },
+    {
+      "en": "Did she out?",
+      "es": "sommes sorti?"
     },
     {
       "en": "We went out",
-      "es": "vous êtes sorti"
+      "es": "êtes sorti"
     },
     {
       "en": "We did not out",
-      "es": "vous ne êtes sorti pas"
+      "es": "n'êtes sorti pas"
+    },
+    {
+      "en": "Did we out?",
+      "es": "êtes sorti?"
     },
     {
       "en": "They went out",
-      "es": "ils sont sorti"
+      "es": "sont sorti"
     },
     {
       "en": "They did not out",
-      "es": "ils ne sont sorti pas"
+      "es": "ne sont sorti pas"
+    },
+    {
+      "en": "Did they out?",
+      "es": "sont sorti?"
     },
     {
       "en": "I left",
-      "es": "je suis parti"
+      "es": "suis parti"
     },
     {
       "en": "I did not left",
-      "es": "je ne suis parti pas"
+      "es": "ne suis parti pas"
+    },
+    {
+      "en": "Did i left?",
+      "es": "suis parti?"
     },
     {
       "en": "You left",
-      "es": "tu es parti"
+      "es": "es parti"
     },
     {
       "en": "You did not left",
-      "es": "tu ne es parti pas"
+      "es": "n'es parti pas"
+    },
+    {
+      "en": "Did you left?",
+      "es": "es parti?"
     },
     {
       "en": "He left",
-      "es": "il est parti"
+      "es": "est parti"
     },
     {
       "en": "He did not left",
-      "es": "il ne est parti pas"
+      "es": "n'est parti pas"
+    },
+    {
+      "en": "Did he left?",
+      "es": "est parti?"
     },
     {
       "en": "She left",
-      "es": "nous sommes parti"
+      "es": "sommes parti"
     },
     {
       "en": "She did not left",
-      "es": "nous ne sommes parti pas"
+      "es": "ne sommes parti pas"
+    },
+    {
+      "en": "Did she left?",
+      "es": "sommes parti?"
     },
     {
       "en": "We left",
-      "es": "vous êtes parti"
+      "es": "êtes parti"
     },
     {
       "en": "We did not left",
-      "es": "vous ne êtes parti pas"
+      "es": "n'êtes parti pas"
+    },
+    {
+      "en": "Did we left?",
+      "es": "êtes parti?"
     },
     {
       "en": "They left",
-      "es": "ils sont parti"
+      "es": "sont parti"
     },
     {
       "en": "They did not left",
-      "es": "ils ne sont parti pas"
+      "es": "ne sont parti pas"
+    },
+    {
+      "en": "Did they left?",
+      "es": "sont parti?"
     },
     {
       "en": "I said",
-      "es": "j'ai dit"
+      "es": "ai dit"
     },
     {
       "en": "I did not said",
-      "es": "j'ai ne dit pas"
+      "es": "n'ai dit pas"
+    },
+    {
+      "en": "Did i said?",
+      "es": "ai dit?"
     },
     {
       "en": "You said",
-      "es": "tu as dit"
+      "es": "as dit"
     },
     {
       "en": "You did not said",
-      "es": "tu ne as dit pas"
+      "es": "n'as dit pas"
+    },
+    {
+      "en": "Did you said?",
+      "es": "as dit?"
     },
     {
       "en": "He said",
-      "es": "il a dit"
+      "es": "a dit"
     },
     {
       "en": "He did not said",
-      "es": "il ne a dit pas"
+      "es": "n'a dit pas"
+    },
+    {
+      "en": "Did he said?",
+      "es": "a dit?"
     },
     {
       "en": "She said",
-      "es": "nous avons dit"
+      "es": "avons dit"
     },
     {
       "en": "She did not said",
-      "es": "nous ne avons dit pas"
+      "es": "n'avons dit pas"
+    },
+    {
+      "en": "Did she said?",
+      "es": "avons dit?"
     },
     {
       "en": "We said",
-      "es": "vous avez dit"
+      "es": "avez dit"
     },
     {
       "en": "We did not said",
-      "es": "vous ne avez dit pas"
+      "es": "n'avez dit pas"
+    },
+    {
+      "en": "Did we said?",
+      "es": "avez dit?"
     },
     {
       "en": "They said",
-      "es": "ils ont dit"
+      "es": "ont dit"
     },
     {
       "en": "They did not said",
-      "es": "ils ne ont dit pas"
+      "es": "n'ont dit pas"
+    },
+    {
+      "en": "Did they said?",
+      "es": "ont dit?"
     },
     {
       "en": "I wrote",
-      "es": "j'ai écrit"
+      "es": "ai écrit"
     },
     {
       "en": "I did not wrote",
-      "es": "j'ai ne écrit pas"
+      "es": "n'ai écrit pas"
+    },
+    {
+      "en": "Did i wrote?",
+      "es": "ai écrit?"
     },
     {
       "en": "You wrote",
-      "es": "tu as écrit"
+      "es": "as écrit"
     },
     {
       "en": "You did not wrote",
-      "es": "tu ne as écrit pas"
+      "es": "n'as écrit pas"
+    },
+    {
+      "en": "Did you wrote?",
+      "es": "as écrit?"
     },
     {
       "en": "He wrote",
-      "es": "il a écrit"
+      "es": "a écrit"
     },
     {
       "en": "He did not wrote",
-      "es": "il ne a écrit pas"
+      "es": "n'a écrit pas"
+    },
+    {
+      "en": "Did he wrote?",
+      "es": "a écrit?"
     },
     {
       "en": "She wrote",
-      "es": "nous avons écrit"
+      "es": "avons écrit"
     },
     {
       "en": "She did not wrote",
-      "es": "nous ne avons écrit pas"
+      "es": "n'avons écrit pas"
+    },
+    {
+      "en": "Did she wrote?",
+      "es": "avons écrit?"
     },
     {
       "en": "We wrote",
-      "es": "vous avez écrit"
+      "es": "avez écrit"
     },
     {
       "en": "We did not wrote",
-      "es": "vous ne avez écrit pas"
+      "es": "n'avez écrit pas"
+    },
+    {
+      "en": "Did we wrote?",
+      "es": "avez écrit?"
     },
     {
       "en": "They wrote",
-      "es": "ils ont écrit"
+      "es": "ont écrit"
     },
     {
       "en": "They did not wrote",
-      "es": "ils ne ont écrit pas"
+      "es": "n'ont écrit pas"
+    },
+    {
+      "en": "Did they wrote?",
+      "es": "ont écrit?"
     },
     {
       "en": "I read",
-      "es": "j'ai lu"
+      "es": "ai lu"
     },
     {
       "en": "I did not read",
-      "es": "j'ai ne lu pas"
+      "es": "n'ai lu pas"
+    },
+    {
+      "en": "Did i read?",
+      "es": "ai lu?"
     },
     {
       "en": "You read",
-      "es": "tu as lu"
+      "es": "as lu"
     },
     {
       "en": "You did not read",
-      "es": "tu ne as lu pas"
+      "es": "n'as lu pas"
+    },
+    {
+      "en": "Did you read?",
+      "es": "as lu?"
     },
     {
       "en": "He read",
-      "es": "il a lu"
+      "es": "a lu"
     },
     {
       "en": "He did not read",
-      "es": "il ne a lu pas"
+      "es": "n'a lu pas"
+    },
+    {
+      "en": "Did he read?",
+      "es": "a lu?"
     },
     {
       "en": "She read",
-      "es": "nous avons lu"
+      "es": "avons lu"
     },
     {
       "en": "She did not read",
-      "es": "nous ne avons lu pas"
+      "es": "n'avons lu pas"
+    },
+    {
+      "en": "Did she read?",
+      "es": "avons lu?"
     },
     {
       "en": "We read",
-      "es": "vous avez lu"
+      "es": "avez lu"
     },
     {
       "en": "We did not read",
-      "es": "vous ne avez lu pas"
+      "es": "n'avez lu pas"
+    },
+    {
+      "en": "Did we read?",
+      "es": "avez lu?"
     },
     {
       "en": "They read",
-      "es": "ils ont lu"
+      "es": "ont lu"
     },
     {
       "en": "They did not read",
-      "es": "ils ne ont lu pas"
+      "es": "n'ont lu pas"
+    },
+    {
+      "en": "Did they read?",
+      "es": "ont lu?"
     }
   ],
   "Future": [
     {
       "en": "I will be",
-      "es": "je serai"
+      "es": "serai"
     },
     {
       "en": "I will not be",
-      "es": "je ne serai pas"
+      "es": "ne serai pas"
+    },
+    {
+      "en": "Will i be?",
+      "es": "serai?"
     },
     {
       "en": "You will be",
-      "es": "tu seras"
+      "es": "seras"
     },
     {
       "en": "You will not be",
-      "es": "tu ne seras pas"
+      "es": "ne seras pas"
+    },
+    {
+      "en": "Will you be?",
+      "es": "seras?"
     },
     {
       "en": "He will be",
-      "es": "il sera"
+      "es": "sera"
     },
     {
       "en": "He will not be",
-      "es": "il ne sera pas"
+      "es": "ne sera pas"
+    },
+    {
+      "en": "Will he be?",
+      "es": "sera?"
     },
     {
       "en": "She will be",
-      "es": "nous serons"
+      "es": "serons"
     },
     {
       "en": "She will not be",
-      "es": "nous ne serons pas"
+      "es": "ne serons pas"
+    },
+    {
+      "en": "Will she be?",
+      "es": "serons?"
     },
     {
       "en": "We will be",
-      "es": "vous serez"
+      "es": "serez"
     },
     {
       "en": "We will not be",
-      "es": "vous ne serez pas"
+      "es": "ne serez pas"
+    },
+    {
+      "en": "Will we be?",
+      "es": "serez?"
     },
     {
       "en": "They will be",
-      "es": "ils seront"
+      "es": "seront"
     },
     {
       "en": "They will not be",
-      "es": "ils ne seront pas"
+      "es": "ne seront pas"
+    },
+    {
+      "en": "Will they be?",
+      "es": "seront?"
     },
     {
       "en": "I will have",
-      "es": "j'aurai"
+      "es": "aurai"
     },
     {
       "en": "I will not have",
-      "es": "ne j'aurai pas"
+      "es": "n'aurai pas"
+    },
+    {
+      "en": "Will i have?",
+      "es": "aurai?"
     },
     {
       "en": "You will have",
-      "es": "tu auras"
+      "es": "auras"
     },
     {
       "en": "You will not have",
-      "es": "tu ne auras pas"
+      "es": "n'auras pas"
+    },
+    {
+      "en": "Will you have?",
+      "es": "auras?"
     },
     {
       "en": "He will have",
-      "es": "il aura"
+      "es": "aura"
     },
     {
       "en": "He will not have",
-      "es": "il ne aura pas"
+      "es": "n'aura pas"
+    },
+    {
+      "en": "Will he have?",
+      "es": "aura?"
     },
     {
       "en": "She will have",
-      "es": "nous aurons"
+      "es": "aurons"
     },
     {
       "en": "She will not have",
-      "es": "nous ne aurons pas"
+      "es": "n'aurons pas"
+    },
+    {
+      "en": "Will she have?",
+      "es": "aurons?"
     },
     {
       "en": "We will have",
-      "es": "vous aurez"
+      "es": "aurez"
     },
     {
       "en": "We will not have",
-      "es": "vous ne aurez pas"
+      "es": "n'aurez pas"
+    },
+    {
+      "en": "Will we have?",
+      "es": "aurez?"
     },
     {
       "en": "They will have",
-      "es": "ils auront"
+      "es": "auront"
     },
     {
       "en": "They will not have",
-      "es": "ils ne auront pas"
+      "es": "n'auront pas"
+    },
+    {
+      "en": "Will they have?",
+      "es": "auront?"
     },
     {
       "en": "I will go",
-      "es": "j'irai"
+      "es": "irai"
     },
     {
       "en": "I will not go",
-      "es": "ne j'irai pas"
+      "es": "n'irai pas"
+    },
+    {
+      "en": "Will i go?",
+      "es": "irai?"
     },
     {
       "en": "You will go",
-      "es": "tu iras"
+      "es": "iras"
     },
     {
       "en": "You will not go",
-      "es": "tu ne iras pas"
+      "es": "n'iras pas"
+    },
+    {
+      "en": "Will you go?",
+      "es": "iras?"
     },
     {
       "en": "He will go",
-      "es": "il ira"
+      "es": "ira"
     },
     {
       "en": "He will not go",
-      "es": "il ne ira pas"
+      "es": "n'ira pas"
+    },
+    {
+      "en": "Will he go?",
+      "es": "ira?"
     },
     {
       "en": "She will go",
-      "es": "nous irons"
+      "es": "irons"
     },
     {
       "en": "She will not go",
-      "es": "nous ne irons pas"
+      "es": "n'irons pas"
+    },
+    {
+      "en": "Will she go?",
+      "es": "irons?"
     },
     {
       "en": "We will go",
-      "es": "vous irez"
+      "es": "irez"
     },
     {
       "en": "We will not go",
-      "es": "vous ne irez pas"
+      "es": "n'irez pas"
+    },
+    {
+      "en": "Will we go?",
+      "es": "irez?"
     },
     {
       "en": "They will go",
-      "es": "ils iront"
+      "es": "iront"
     },
     {
       "en": "They will not go",
-      "es": "ils ne iront pas"
+      "es": "n'iront pas"
+    },
+    {
+      "en": "Will they go?",
+      "es": "iront?"
     },
     {
       "en": "I will do",
-      "es": "je ferai"
+      "es": "ferai"
     },
     {
       "en": "I will not do",
-      "es": "je ne ferai pas"
+      "es": "ne ferai pas"
+    },
+    {
+      "en": "Will i do?",
+      "es": "ferai?"
     },
     {
       "en": "You will do",
-      "es": "tu feras"
+      "es": "feras"
     },
     {
       "en": "You will not do",
-      "es": "tu ne feras pas"
+      "es": "ne feras pas"
+    },
+    {
+      "en": "Will you do?",
+      "es": "feras?"
     },
     {
       "en": "He will do",
-      "es": "il fera"
+      "es": "fera"
     },
     {
       "en": "He will not do",
-      "es": "il ne fera pas"
+      "es": "ne fera pas"
+    },
+    {
+      "en": "Will he do?",
+      "es": "fera?"
     },
     {
       "en": "She will do",
-      "es": "nous ferons"
+      "es": "ferons"
     },
     {
       "en": "She will not do",
-      "es": "nous ne ferons pas"
+      "es": "ne ferons pas"
+    },
+    {
+      "en": "Will she do?",
+      "es": "ferons?"
     },
     {
       "en": "We will do",
-      "es": "vous ferez"
+      "es": "ferez"
     },
     {
       "en": "We will not do",
-      "es": "vous ne ferez pas"
+      "es": "ne ferez pas"
+    },
+    {
+      "en": "Will we do?",
+      "es": "ferez?"
     },
     {
       "en": "They will do",
-      "es": "ils feront"
+      "es": "feront"
     },
     {
       "en": "They will not do",
-      "es": "ils ne feront pas"
+      "es": "ne feront pas"
+    },
+    {
+      "en": "Will they do?",
+      "es": "feront?"
     },
     {
       "en": "I will speak",
-      "es": "je parlerai"
+      "es": "parlerai"
     },
     {
       "en": "I will not speak",
-      "es": "je ne parlerai pas"
+      "es": "ne parlerai pas"
+    },
+    {
+      "en": "Will i speak?",
+      "es": "parlerai?"
     },
     {
       "en": "You will speak",
-      "es": "tu parleras"
+      "es": "parleras"
     },
     {
       "en": "You will not speak",
-      "es": "tu ne parleras pas"
+      "es": "ne parleras pas"
+    },
+    {
+      "en": "Will you speak?",
+      "es": "parleras?"
     },
     {
       "en": "He will speak",
-      "es": "il parlera"
+      "es": "parlera"
     },
     {
       "en": "He will not speak",
-      "es": "il ne parlera pas"
+      "es": "ne parlera pas"
+    },
+    {
+      "en": "Will he speak?",
+      "es": "parlera?"
     },
     {
       "en": "She will speak",
-      "es": "nous parlerons"
+      "es": "parlerons"
     },
     {
       "en": "She will not speak",
-      "es": "nous ne parlerons pas"
+      "es": "ne parlerons pas"
+    },
+    {
+      "en": "Will she speak?",
+      "es": "parlerons?"
     },
     {
       "en": "We will speak",
-      "es": "vous parlerez"
+      "es": "parlerez"
     },
     {
       "en": "We will not speak",
-      "es": "vous ne parlerez pas"
+      "es": "ne parlerez pas"
+    },
+    {
+      "en": "Will we speak?",
+      "es": "parlerez?"
     },
     {
       "en": "They will speak",
-      "es": "ils parleront"
+      "es": "parleront"
     },
     {
       "en": "They will not speak",
-      "es": "ils ne parleront pas"
+      "es": "ne parleront pas"
+    },
+    {
+      "en": "Will they speak?",
+      "es": "parleront?"
     },
     {
       "en": "I will finish",
-      "es": "je finirai"
+      "es": "finirai"
     },
     {
       "en": "I will not finish",
-      "es": "je ne finirai pas"
+      "es": "ne finirai pas"
+    },
+    {
+      "en": "Will i finish?",
+      "es": "finirai?"
     },
     {
       "en": "You will finish",
-      "es": "tu finiras"
+      "es": "finiras"
     },
     {
       "en": "You will not finish",
-      "es": "tu ne finiras pas"
+      "es": "ne finiras pas"
+    },
+    {
+      "en": "Will you finish?",
+      "es": "finiras?"
     },
     {
       "en": "He will finish",
-      "es": "il finira"
+      "es": "finira"
     },
     {
       "en": "He will not finish",
-      "es": "il ne finira pas"
+      "es": "ne finira pas"
+    },
+    {
+      "en": "Will he finish?",
+      "es": "finira?"
     },
     {
       "en": "She will finish",
-      "es": "nous finirons"
+      "es": "finirons"
     },
     {
       "en": "She will not finish",
-      "es": "nous ne finirons pas"
+      "es": "ne finirons pas"
+    },
+    {
+      "en": "Will she finish?",
+      "es": "finirons?"
     },
     {
       "en": "We will finish",
-      "es": "vous finirez"
+      "es": "finirez"
     },
     {
       "en": "We will not finish",
-      "es": "vous ne finirez pas"
+      "es": "ne finirez pas"
+    },
+    {
+      "en": "Will we finish?",
+      "es": "finirez?"
     },
     {
       "en": "They will finish",
-      "es": "ils finiront"
+      "es": "finiront"
     },
     {
       "en": "They will not finish",
-      "es": "ils ne finiront pas"
+      "es": "ne finiront pas"
+    },
+    {
+      "en": "Will they finish?",
+      "es": "finiront?"
     },
     {
       "en": "I will take",
-      "es": "je prendrai"
+      "es": "prendrai"
     },
     {
       "en": "I will not take",
-      "es": "je ne prendrai pas"
+      "es": "ne prendrai pas"
+    },
+    {
+      "en": "Will i take?",
+      "es": "prendrai?"
     },
     {
       "en": "You will take",
-      "es": "tu prendras"
+      "es": "prendras"
     },
     {
       "en": "You will not take",
-      "es": "tu ne prendras pas"
+      "es": "ne prendras pas"
+    },
+    {
+      "en": "Will you take?",
+      "es": "prendras?"
     },
     {
       "en": "He will take",
-      "es": "il prendra"
+      "es": "prendra"
     },
     {
       "en": "He will not take",
-      "es": "il ne prendra pas"
+      "es": "ne prendra pas"
+    },
+    {
+      "en": "Will he take?",
+      "es": "prendra?"
     },
     {
       "en": "She will take",
-      "es": "nous prendrons"
+      "es": "prendrons"
     },
     {
       "en": "She will not take",
-      "es": "nous ne prendrons pas"
+      "es": "ne prendrons pas"
+    },
+    {
+      "en": "Will she take?",
+      "es": "prendrons?"
     },
     {
       "en": "We will take",
-      "es": "vous prendrez"
+      "es": "prendrez"
     },
     {
       "en": "We will not take",
-      "es": "vous ne prendrez pas"
+      "es": "ne prendrez pas"
+    },
+    {
+      "en": "Will we take?",
+      "es": "prendrez?"
     },
     {
       "en": "They will take",
-      "es": "ils prendront"
+      "es": "prendront"
     },
     {
       "en": "They will not take",
-      "es": "ils ne prendront pas"
+      "es": "ne prendront pas"
+    },
+    {
+      "en": "Will they take?",
+      "es": "prendront?"
     },
     {
       "en": "I will come",
-      "es": "je viendrai"
+      "es": "viendrai"
     },
     {
       "en": "I will not come",
-      "es": "je ne viendrai pas"
+      "es": "ne viendrai pas"
+    },
+    {
+      "en": "Will i come?",
+      "es": "viendrai?"
     },
     {
       "en": "You will come",
-      "es": "tu viendras"
+      "es": "viendras"
     },
     {
       "en": "You will not come",
-      "es": "tu ne viendras pas"
+      "es": "ne viendras pas"
+    },
+    {
+      "en": "Will you come?",
+      "es": "viendras?"
     },
     {
       "en": "He will come",
-      "es": "il viendra"
+      "es": "viendra"
     },
     {
       "en": "He will not come",
-      "es": "il ne viendra pas"
+      "es": "ne viendra pas"
+    },
+    {
+      "en": "Will he come?",
+      "es": "viendra?"
     },
     {
       "en": "She will come",
-      "es": "nous viendrons"
+      "es": "viendrons"
     },
     {
       "en": "She will not come",
-      "es": "nous ne viendrons pas"
+      "es": "ne viendrons pas"
+    },
+    {
+      "en": "Will she come?",
+      "es": "viendrons?"
     },
     {
       "en": "We will come",
-      "es": "vous viendrez"
+      "es": "viendrez"
     },
     {
       "en": "We will not come",
-      "es": "vous ne viendrez pas"
+      "es": "ne viendrez pas"
+    },
+    {
+      "en": "Will we come?",
+      "es": "viendrez?"
     },
     {
       "en": "They will come",
-      "es": "ils viendront"
+      "es": "viendront"
     },
     {
       "en": "They will not come",
-      "es": "ils ne viendront pas"
+      "es": "ne viendront pas"
     },
     {
-      "en": "I will be able",
-      "es": "je pourrai"
+      "en": "Will they come?",
+      "es": "viendront?"
     },
     {
-      "en": "I will not able",
-      "es": "je ne pourrai pas"
+      "en": "I will be able to",
+      "es": "pourrai"
     },
     {
-      "en": "You will be able",
-      "es": "tu pourras"
+      "en": "I will not able to",
+      "es": "ne pourrai pas"
     },
     {
-      "en": "You will not able",
-      "es": "tu ne pourras pas"
+      "en": "Will i able to?",
+      "es": "pourrai?"
     },
     {
-      "en": "He will be able",
-      "es": "il pourra"
+      "en": "You will be able to",
+      "es": "pourras"
     },
     {
-      "en": "He will not able",
-      "es": "il ne pourra pas"
+      "en": "You will not able to",
+      "es": "ne pourras pas"
     },
     {
-      "en": "She will be able",
-      "es": "nous pourrons"
+      "en": "Will you able to?",
+      "es": "pourras?"
     },
     {
-      "en": "She will not able",
-      "es": "nous ne pourrons pas"
+      "en": "He will be able to",
+      "es": "pourra"
     },
     {
-      "en": "We will be able",
-      "es": "vous pourrez"
+      "en": "He will not able to",
+      "es": "ne pourra pas"
     },
     {
-      "en": "We will not able",
-      "es": "vous ne pourrez pas"
+      "en": "Will he able to?",
+      "es": "pourra?"
     },
     {
-      "en": "They will be able",
-      "es": "ils pourront"
+      "en": "She will be able to",
+      "es": "pourrons"
     },
     {
-      "en": "They will not able",
-      "es": "ils ne pourront pas"
+      "en": "She will not able to",
+      "es": "ne pourrons pas"
+    },
+    {
+      "en": "Will she able to?",
+      "es": "pourrons?"
+    },
+    {
+      "en": "We will be able to",
+      "es": "pourrez"
+    },
+    {
+      "en": "We will not able to",
+      "es": "ne pourrez pas"
+    },
+    {
+      "en": "Will we able to?",
+      "es": "pourrez?"
+    },
+    {
+      "en": "They will be able to",
+      "es": "pourront"
+    },
+    {
+      "en": "They will not able to",
+      "es": "ne pourront pas"
+    },
+    {
+      "en": "Will they able to?",
+      "es": "pourront?"
     },
     {
       "en": "I will want",
-      "es": "je voudrai"
+      "es": "voudrai"
     },
     {
       "en": "I will not want",
-      "es": "je ne voudrai pas"
+      "es": "ne voudrai pas"
+    },
+    {
+      "en": "Will i want?",
+      "es": "voudrai?"
     },
     {
       "en": "You will want",
-      "es": "tu voudras"
+      "es": "voudras"
     },
     {
       "en": "You will not want",
-      "es": "tu ne voudras pas"
+      "es": "ne voudras pas"
+    },
+    {
+      "en": "Will you want?",
+      "es": "voudras?"
     },
     {
       "en": "He will want",
-      "es": "il voudra"
+      "es": "voudra"
     },
     {
       "en": "He will not want",
-      "es": "il ne voudra pas"
+      "es": "ne voudra pas"
+    },
+    {
+      "en": "Will he want?",
+      "es": "voudra?"
     },
     {
       "en": "She will want",
-      "es": "nous voudrons"
+      "es": "voudrons"
     },
     {
       "en": "She will not want",
-      "es": "nous ne voudrons pas"
+      "es": "ne voudrons pas"
+    },
+    {
+      "en": "Will she want?",
+      "es": "voudrons?"
     },
     {
       "en": "We will want",
-      "es": "vous voudrez"
+      "es": "voudrez"
     },
     {
       "en": "We will not want",
-      "es": "vous ne voudrez pas"
+      "es": "ne voudrez pas"
+    },
+    {
+      "en": "Will we want?",
+      "es": "voudrez?"
     },
     {
       "en": "They will want",
-      "es": "ils voudront"
+      "es": "voudront"
     },
     {
       "en": "They will not want",
-      "es": "ils ne voudront pas"
+      "es": "ne voudront pas"
+    },
+    {
+      "en": "Will they want?",
+      "es": "voudront?"
     },
     {
       "en": "I will have to",
-      "es": "je devrai"
+      "es": "devrai"
     },
     {
       "en": "I will not to",
-      "es": "je ne devrai pas"
+      "es": "ne devrai pas"
+    },
+    {
+      "en": "Will i to?",
+      "es": "devrai?"
     },
     {
       "en": "You will have to",
-      "es": "tu devras"
+      "es": "devras"
     },
     {
       "en": "You will not to",
-      "es": "tu ne devras pas"
+      "es": "ne devras pas"
+    },
+    {
+      "en": "Will you to?",
+      "es": "devras?"
     },
     {
       "en": "He will have to",
-      "es": "il devra"
+      "es": "devra"
     },
     {
       "en": "He will not to",
-      "es": "il ne devra pas"
+      "es": "ne devra pas"
+    },
+    {
+      "en": "Will he to?",
+      "es": "devra?"
     },
     {
       "en": "She will have to",
-      "es": "nous devrons"
+      "es": "devrons"
     },
     {
       "en": "She will not to",
-      "es": "nous ne devrons pas"
+      "es": "ne devrons pas"
+    },
+    {
+      "en": "Will she to?",
+      "es": "devrons?"
     },
     {
       "en": "We will have to",
-      "es": "vous devrez"
+      "es": "devrez"
     },
     {
       "en": "We will not to",
-      "es": "vous ne devrez pas"
+      "es": "ne devrez pas"
+    },
+    {
+      "en": "Will we to?",
+      "es": "devrez?"
     },
     {
       "en": "They will have to",
-      "es": "ils devront"
+      "es": "devront"
     },
     {
       "en": "They will not to",
-      "es": "ils ne devront pas"
+      "es": "ne devront pas"
+    },
+    {
+      "en": "Will they to?",
+      "es": "devront?"
     },
     {
       "en": "I will see",
-      "es": "je verrai"
+      "es": "verrai"
     },
     {
       "en": "I will not see",
-      "es": "je ne verrai pas"
+      "es": "ne verrai pas"
+    },
+    {
+      "en": "Will i see?",
+      "es": "verrai?"
     },
     {
       "en": "You will see",
-      "es": "tu verras"
+      "es": "verras"
     },
     {
       "en": "You will not see",
-      "es": "tu ne verras pas"
+      "es": "ne verras pas"
+    },
+    {
+      "en": "Will you see?",
+      "es": "verras?"
     },
     {
       "en": "He will see",
-      "es": "il verra"
+      "es": "verra"
     },
     {
       "en": "He will not see",
-      "es": "il ne verra pas"
+      "es": "ne verra pas"
+    },
+    {
+      "en": "Will he see?",
+      "es": "verra?"
     },
     {
       "en": "She will see",
-      "es": "nous verrons"
+      "es": "verrons"
     },
     {
       "en": "She will not see",
-      "es": "nous ne verrons pas"
+      "es": "ne verrons pas"
+    },
+    {
+      "en": "Will she see?",
+      "es": "verrons?"
     },
     {
       "en": "We will see",
-      "es": "vous verrez"
+      "es": "verrez"
     },
     {
       "en": "We will not see",
-      "es": "vous ne verrez pas"
+      "es": "ne verrez pas"
+    },
+    {
+      "en": "Will we see?",
+      "es": "verrez?"
     },
     {
       "en": "They will see",
-      "es": "ils verront"
+      "es": "verront"
     },
     {
       "en": "They will not see",
-      "es": "ils ne verront pas"
+      "es": "ne verront pas"
+    },
+    {
+      "en": "Will they see?",
+      "es": "verront?"
     },
     {
       "en": "I will know",
-      "es": "je saurai"
+      "es": "saurai"
     },
     {
       "en": "I will not know",
-      "es": "je ne saurai pas"
+      "es": "ne saurai pas"
+    },
+    {
+      "en": "Will i know?",
+      "es": "saurai?"
     },
     {
       "en": "You will know",
-      "es": "tu sauras"
+      "es": "sauras"
     },
     {
       "en": "You will not know",
-      "es": "tu ne sauras pas"
+      "es": "ne sauras pas"
+    },
+    {
+      "en": "Will you know?",
+      "es": "sauras?"
     },
     {
       "en": "He will know",
-      "es": "il saura"
+      "es": "saura"
     },
     {
       "en": "He will not know",
-      "es": "il ne saura pas"
+      "es": "ne saura pas"
+    },
+    {
+      "en": "Will he know?",
+      "es": "saura?"
     },
     {
       "en": "She will know",
-      "es": "nous saurons"
+      "es": "saurons"
     },
     {
       "en": "She will not know",
-      "es": "nous ne saurons pas"
+      "es": "ne saurons pas"
+    },
+    {
+      "en": "Will she know?",
+      "es": "saurons?"
     },
     {
       "en": "We will know",
-      "es": "vous saurez"
+      "es": "saurez"
     },
     {
       "en": "We will not know",
-      "es": "vous ne saurez pas"
+      "es": "ne saurez pas"
+    },
+    {
+      "en": "Will we know?",
+      "es": "saurez?"
     },
     {
       "en": "They will know",
-      "es": "ils sauront"
+      "es": "sauront"
     },
     {
       "en": "They will not know",
-      "es": "ils ne sauront pas"
+      "es": "ne sauront pas"
+    },
+    {
+      "en": "Will they know?",
+      "es": "sauront?"
     },
     {
       "en": "I will put",
-      "es": "je mettrai"
+      "es": "mettrai"
     },
     {
       "en": "I will not put",
-      "es": "je ne mettrai pas"
+      "es": "ne mettrai pas"
+    },
+    {
+      "en": "Will i put?",
+      "es": "mettrai?"
     },
     {
       "en": "You will put",
-      "es": "tu mettras"
+      "es": "mettras"
     },
     {
       "en": "You will not put",
-      "es": "tu ne mettras pas"
+      "es": "ne mettras pas"
+    },
+    {
+      "en": "Will you put?",
+      "es": "mettras?"
     },
     {
       "en": "He will put",
-      "es": "il mettra"
+      "es": "mettra"
     },
     {
       "en": "He will not put",
-      "es": "il ne mettra pas"
+      "es": "ne mettra pas"
+    },
+    {
+      "en": "Will he put?",
+      "es": "mettra?"
     },
     {
       "en": "She will put",
-      "es": "nous mettrons"
+      "es": "mettrons"
     },
     {
       "en": "She will not put",
-      "es": "nous ne mettrons pas"
+      "es": "ne mettrons pas"
+    },
+    {
+      "en": "Will she put?",
+      "es": "mettrons?"
     },
     {
       "en": "We will put",
-      "es": "vous mettrez"
+      "es": "mettrez"
     },
     {
       "en": "We will not put",
-      "es": "vous ne mettrez pas"
+      "es": "ne mettrez pas"
+    },
+    {
+      "en": "Will we put?",
+      "es": "mettrez?"
     },
     {
       "en": "They will put",
-      "es": "ils mettront"
+      "es": "mettront"
     },
     {
       "en": "They will not put",
-      "es": "ils ne mettront pas"
+      "es": "ne mettront pas"
+    },
+    {
+      "en": "Will they put?",
+      "es": "mettront?"
     },
     {
       "en": "I will go out",
-      "es": "je sortirai"
+      "es": "sortirai"
     },
     {
       "en": "I will not out",
-      "es": "je ne sortirai pas"
+      "es": "ne sortirai pas"
+    },
+    {
+      "en": "Will i out?",
+      "es": "sortirai?"
     },
     {
       "en": "You will go out",
-      "es": "tu sortiras"
+      "es": "sortiras"
     },
     {
       "en": "You will not out",
-      "es": "tu ne sortiras pas"
+      "es": "ne sortiras pas"
+    },
+    {
+      "en": "Will you out?",
+      "es": "sortiras?"
     },
     {
       "en": "He will go out",
-      "es": "il sortira"
+      "es": "sortira"
     },
     {
       "en": "He will not out",
-      "es": "il ne sortira pas"
+      "es": "ne sortira pas"
+    },
+    {
+      "en": "Will he out?",
+      "es": "sortira?"
     },
     {
       "en": "She will go out",
-      "es": "nous sortirons"
+      "es": "sortirons"
     },
     {
       "en": "She will not out",
-      "es": "nous ne sortirons pas"
+      "es": "ne sortirons pas"
+    },
+    {
+      "en": "Will she out?",
+      "es": "sortirons?"
     },
     {
       "en": "We will go out",
-      "es": "vous sortirez"
+      "es": "sortirez"
     },
     {
       "en": "We will not out",
-      "es": "vous ne sortirez pas"
+      "es": "ne sortirez pas"
+    },
+    {
+      "en": "Will we out?",
+      "es": "sortirez?"
     },
     {
       "en": "They will go out",
-      "es": "ils sortiront"
+      "es": "sortiront"
     },
     {
       "en": "They will not out",
-      "es": "ils ne sortiront pas"
+      "es": "ne sortiront pas"
+    },
+    {
+      "en": "Will they out?",
+      "es": "sortiront?"
     },
     {
       "en": "I will leave",
-      "es": "je partirai"
+      "es": "partirai"
     },
     {
       "en": "I will not leave",
-      "es": "je ne partirai pas"
+      "es": "ne partirai pas"
+    },
+    {
+      "en": "Will i leave?",
+      "es": "partirai?"
     },
     {
       "en": "You will leave",
-      "es": "tu partiras"
+      "es": "partiras"
     },
     {
       "en": "You will not leave",
-      "es": "tu ne partiras pas"
+      "es": "ne partiras pas"
+    },
+    {
+      "en": "Will you leave?",
+      "es": "partiras?"
     },
     {
       "en": "He will leave",
-      "es": "il partira"
+      "es": "partira"
     },
     {
       "en": "He will not leave",
-      "es": "il ne partira pas"
+      "es": "ne partira pas"
+    },
+    {
+      "en": "Will he leave?",
+      "es": "partira?"
     },
     {
       "en": "She will leave",
-      "es": "nous partirons"
+      "es": "partirons"
     },
     {
       "en": "She will not leave",
-      "es": "nous ne partirons pas"
+      "es": "ne partirons pas"
+    },
+    {
+      "en": "Will she leave?",
+      "es": "partirons?"
     },
     {
       "en": "We will leave",
-      "es": "vous partirez"
+      "es": "partirez"
     },
     {
       "en": "We will not leave",
-      "es": "vous ne partirez pas"
+      "es": "ne partirez pas"
+    },
+    {
+      "en": "Will we leave?",
+      "es": "partirez?"
     },
     {
       "en": "They will leave",
-      "es": "ils partiront"
+      "es": "partiront"
     },
     {
       "en": "They will not leave",
-      "es": "ils ne partiront pas"
+      "es": "ne partiront pas"
+    },
+    {
+      "en": "Will they leave?",
+      "es": "partiront?"
     },
     {
       "en": "I will say",
-      "es": "je dirai"
+      "es": "dirai"
     },
     {
       "en": "I will not say",
-      "es": "je ne dirai pas"
+      "es": "ne dirai pas"
+    },
+    {
+      "en": "Will i say?",
+      "es": "dirai?"
     },
     {
       "en": "You will say",
-      "es": "tu diras"
+      "es": "diras"
     },
     {
       "en": "You will not say",
-      "es": "tu ne diras pas"
+      "es": "ne diras pas"
+    },
+    {
+      "en": "Will you say?",
+      "es": "diras?"
     },
     {
       "en": "He will say",
-      "es": "il dira"
+      "es": "dira"
     },
     {
       "en": "He will not say",
-      "es": "il ne dira pas"
+      "es": "ne dira pas"
+    },
+    {
+      "en": "Will he say?",
+      "es": "dira?"
     },
     {
       "en": "She will say",
-      "es": "nous dirons"
+      "es": "dirons"
     },
     {
       "en": "She will not say",
-      "es": "nous ne dirons pas"
+      "es": "ne dirons pas"
+    },
+    {
+      "en": "Will she say?",
+      "es": "dirons?"
     },
     {
       "en": "We will say",
-      "es": "vous direz"
+      "es": "direz"
     },
     {
       "en": "We will not say",
-      "es": "vous ne direz pas"
+      "es": "ne direz pas"
+    },
+    {
+      "en": "Will we say?",
+      "es": "direz?"
     },
     {
       "en": "They will say",
-      "es": "ils diront"
+      "es": "diront"
     },
     {
       "en": "They will not say",
-      "es": "ils ne diront pas"
+      "es": "ne diront pas"
+    },
+    {
+      "en": "Will they say?",
+      "es": "diront?"
     },
     {
       "en": "I will write",
-      "es": "je écrirai"
+      "es": "écrirai"
     },
     {
       "en": "I will not write",
-      "es": "je ne écrirai pas"
+      "es": "n'écrirai pas"
+    },
+    {
+      "en": "Will i write?",
+      "es": "écrirai?"
     },
     {
       "en": "You will write",
-      "es": "tu écriras"
+      "es": "écriras"
     },
     {
       "en": "You will not write",
-      "es": "tu ne écriras pas"
+      "es": "n'écriras pas"
+    },
+    {
+      "en": "Will you write?",
+      "es": "écriras?"
     },
     {
       "en": "He will write",
-      "es": "il écrira"
+      "es": "écrira"
     },
     {
       "en": "He will not write",
-      "es": "il ne écrira pas"
+      "es": "n'écrira pas"
+    },
+    {
+      "en": "Will he write?",
+      "es": "écrira?"
     },
     {
       "en": "She will write",
-      "es": "nous écrirons"
+      "es": "écrirons"
     },
     {
       "en": "She will not write",
-      "es": "nous ne écrirons pas"
+      "es": "n'écrirons pas"
+    },
+    {
+      "en": "Will she write?",
+      "es": "écrirons?"
     },
     {
       "en": "We will write",
-      "es": "vous écrirez"
+      "es": "écrirez"
     },
     {
       "en": "We will not write",
-      "es": "vous ne écrirez pas"
+      "es": "n'écrirez pas"
+    },
+    {
+      "en": "Will we write?",
+      "es": "écrirez?"
     },
     {
       "en": "They will write",
-      "es": "ils écriront"
+      "es": "écriront"
     },
     {
       "en": "They will not write",
-      "es": "ils ne écriront pas"
+      "es": "n'écriront pas"
+    },
+    {
+      "en": "Will they write?",
+      "es": "écriront?"
     },
     {
       "en": "I will read",
-      "es": "je lirai"
+      "es": "lirai"
     },
     {
       "en": "I will not read",
-      "es": "je ne lirai pas"
+      "es": "ne lirai pas"
+    },
+    {
+      "en": "Will i read?",
+      "es": "lirai?"
     },
     {
       "en": "You will read",
-      "es": "tu liras"
+      "es": "liras"
     },
     {
       "en": "You will not read",
-      "es": "tu ne liras pas"
+      "es": "ne liras pas"
+    },
+    {
+      "en": "Will you read?",
+      "es": "liras?"
     },
     {
       "en": "He will read",
-      "es": "il lira"
+      "es": "lira"
     },
     {
       "en": "He will not read",
-      "es": "il ne lira pas"
+      "es": "ne lira pas"
+    },
+    {
+      "en": "Will he read?",
+      "es": "lira?"
     },
     {
       "en": "She will read",
-      "es": "nous lirons"
+      "es": "lirons"
     },
     {
       "en": "She will not read",
-      "es": "nous ne lirons pas"
+      "es": "ne lirons pas"
+    },
+    {
+      "en": "Will she read?",
+      "es": "lirons?"
     },
     {
       "en": "We will read",
-      "es": "vous lirez"
+      "es": "lirez"
     },
     {
       "en": "We will not read",
-      "es": "vous ne lirez pas"
+      "es": "ne lirez pas"
+    },
+    {
+      "en": "Will we read?",
+      "es": "lirez?"
     },
     {
       "en": "They will read",
-      "es": "ils liront"
+      "es": "liront"
     },
     {
       "en": "They will not read",
-      "es": "ils ne liront pas"
+      "es": "ne liront pas"
+    },
+    {
+      "en": "Will they read?",
+      "es": "liront?"
     }
   ]
-};
 };
 
 let currentTense = "Present";
